@@ -5,7 +5,7 @@ function Home() {
     <div>
      <a href="http://localhost:3000/" download>قم بتحميل التطبيق</a>
     </div>
-  )
+  ) 
 }
 
 export default Home
