@@ -1,24 +1,62 @@
-import logo from './logo.svg';
+import React,{ lazy } from 'react';
 import './App.css';
-
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import Loading from './component/Loading';
+import Navbar from './component/Navbar';
+import Footer from './component/Footer';
+import Footer2 from "./component/dataAsmaallah.js/Footer2"
+const Btn = lazy(()=>import('./component/Btn'))
+const Home = lazy(()=>import('./component/Home'))
+const Asmaallah = lazy(()=>import('./component/Asmaallah'))
+const Mawaqeet = lazy(()=>import('./component/Mawaqeet'))
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        
+        {/* btn */}
+        <Route path='/' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Btn/>
+            </React.Suspense>
+        }/>
+        {/* Home */}
+        <Route path='/home' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Home/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+
+
+        {/* asmaallah */}
+     <Route path='/asmaallah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Asmaallah/>
+            <Footer2/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Mawaqeet */}
+     <Route path='/Mawaqeet' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Mawaqeet/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        </Routes>
     </div>
+    </BrowserRouter>
+
   );
 }
 

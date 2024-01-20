@@ -1,0 +1,51 @@
+.brand,
+.brand2{
+    background: linear-gradient(to left, #4A94C2,#235E83);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+.colornav{
+    height: 100%;
+    color:#4A94C2;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.colornav:hover{
+    color:#235E83;
+    
+}
+
+/* footer */
+.insta{
+    margin-right:3px ;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name{
+    color: #3f3b3b;
+
+    font-size:13px;
+    margin-top: 3px;
+}
+@media(max-width:990px){
+    .colornav{
+    margin-left:0;
+ 
+     margin-top: 10px;
+    }
+}
+
+@media(max-width:601px){
+    .brand2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
