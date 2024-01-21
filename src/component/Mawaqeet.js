@@ -43,23 +43,29 @@ function Mawaqeet() {
             <>
               <option value="cairo">القاهرة</option>
               <option value="Alexandria">الاسكندرية</option>
+              <option value="Aswan">أسوان</option>
+              <option value="Matrouh">مطروح</option>
               <option value="Dakahlia">الدقهلية</option>
-              <option value="Dakahlia">الدقهلية</option>
-              <option value="Dakahlia">الدقهلية</option>
-              <option value="Dakahlia">الدقهلية</option>
+              <option value="Port Said">بورسعيد</option>
               
             </>
           )}
           {selectedCountry === 'saudi_arabia' && (
             <>
               <option value="riyadh">الرياض</option>
-              {/* Add other Saudi cities as needed */}
+              <option value="Makkah">مكه</option>
+              <option value="Dammam">الدمام</option>
+              <option value="Abha">أبها</option>
+              <option value="Madinah">المدينة المنورة</option>
             </>
           )}
           {selectedCountry === 'OM' && (
             <>
-              <option value="Masqaţ">مسقط</option>
-              {/* Add other Saudi cities as needed */}
+              <option value="Muscat">مسقط</option>
+              <option value="Al Buraymi">البريمي</option>
+              <option value="Musandam">مسندم</option>
+              <option value="Ash Sharqiyah North">محافظة شمال الشرقية</option>
+              <option value="Dhofar">ظفار</option>
             </>
           )}
         </select>

@@ -28,7 +28,7 @@
 .allselect select{
     width: 300px;
     margin-left: 10px;
-    appearance: none;
+    /* appearance: none; */
     outline: none;
     text-align: center;
     font-size: 18px;
@@ -40,4 +40,9 @@
 .allselect option{
     background: #f1f1f1;
     color: #000;
+}
+@media(max-width:630px){
+    .allselect select{
+        width: 150px;
+    }
 }
