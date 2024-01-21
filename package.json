@@ -1,9 +1,9 @@
 {
+  "homepage":"https://MohamedYasser151.github.io/Muslim",
   "name": "muslim",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homepage":"https://MohamedYasser151.github.io/Muslim",
     "@popperjs/core": "^2.11.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
