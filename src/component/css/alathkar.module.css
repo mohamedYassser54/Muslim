@@ -1,0 +1,15 @@
+.cards{
+    width: 100px;
+    transition: 0.3s;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.cards img{
+    width: 100%;
+    border-radius: 20px;
+}
+.link{
+    text-decoration: none;
+    color: #2d93d3;
+}

@@ -37,13 +37,14 @@ function NavBar() {
                 </Form>
                 <Nav className="justify-content-center flex-grow-1 pe-3 " >
                   <NavLink to="/home" className={style.colornav}>الصفحة الرئيسية</NavLink>
+                  <NavLink to="/alathkar" className={style.colornav}>الأذكار</NavLink>
                   <NavLink to="/asmaallah" className={style.colornav}>اسماء الله الحسنى</NavLink>
                   <NavLink to="/Mawaqeet" className={style.colornav}>اوقات الصلاة</NavLink>
                 </Nav>
                
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            <NavLink to="/home" className={style.brand} dir=''>Muslim</NavLink>
+            <NavLink to="/home" className={style.brand} >Muslim</NavLink>
           </Container>
         </Navbar>
       

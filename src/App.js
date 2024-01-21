@@ -9,6 +9,8 @@ const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
 const Asmaallah = lazy(()=>import('./component/Asmaallah'))
 const Mawaqeet = lazy(()=>import('./component/Mawaqeet'))
+const Alathkar = lazy(()=>import('./component/Alathkar'))
+const Alathkaralsabah = lazy(()=>import('./component/AllAlathkar/alathkaralsabah'))
 function App() {
   return (
     <BrowserRouter>
@@ -49,6 +51,26 @@ function App() {
             <div>
               <Navbar/>
             <Mawaqeet/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*  alathkar*/}
+     <Route path='/alathkar' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Alathkar/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*  alathkaralsabah*/}
+     <Route path='/alathkaralsabah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Alathkaralsabah/>
             <Footer/>
             </div>
             </React.Suspense>
