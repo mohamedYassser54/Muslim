@@ -5,8 +5,7 @@ function Mawaqeet() {
     const [selectedCountry, setSelectedCountry] = useState('egypt');
     const [selectedCity, setSelectedCity] = useState('cairo');
     useEffect(() => {
-        const apiUrl = `http://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=${selectedCountry}&method=8`;
-    
+      const apiUrl = `https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=${selectedCountry}&method=8`;
         fetch(apiUrl)
           .then(res => res.json())
           .then(result => {
@@ -14,7 +13,7 @@ function Mawaqeet() {
             setData(timings);
             console.log(timings);
           })
-          .catch(err => console.log(err));
+          .catch(err => console.error("Error fetching data:", err));
       }, [selectedCountry, selectedCity]);
     
       const handleCountryChange = (event) => {
