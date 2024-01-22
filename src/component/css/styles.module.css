@@ -4,8 +4,8 @@
   justify-content: center;
 }
 .mySwiper{
-  width:400px;
-  height: 400px;
+  width:350px;
+  height: 480px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -37,6 +37,10 @@
 }
 .text h4{
   color: #BE6912;
+}
+.text h6{
+  display: flex;
+  color: #C4C1BF;
 }
 
 /* button */

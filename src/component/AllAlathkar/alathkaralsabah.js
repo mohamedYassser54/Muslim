@@ -10,6 +10,8 @@ import audio from './audio/1.mp3'
 import audio2 from './audio/2.mp3'
 import audio3 from './audio/3.mp3'
 import audio4 from './audio/4.mp3'
+import audio5 from './audio/5.mp3'
+import audio6 from './audio/6.mp3'
 
 
 import SwiperCore, { Navigation } from 'swiper';
@@ -21,7 +23,7 @@ function AlathkarAlsabah() {
   const [number ,setNumber] = useState({
     number : 1,
     number2:1,
-    number3:3,
+    number3:1,
   });
   const swiperRef = useRef(null);
   const click = (key) => {
@@ -33,19 +35,21 @@ function AlathkarAlsabah() {
 
       if(
          (key === 'number' && number.number === 1)||
-         (key === 'number2' && number.number2 === 1) 
-        //  (key === 'number3' && number.number3 === 3)
+         (key === 'number2' && number.number2 === 1)||
+         (key === 'number3' && number.number3 === 1)
          ) {
         swiperRef.current.slideNext();
       }
      if(
       (key === "number" && number.number === 0)||
-      (key === "number2" && number.number2 === 0)
+      (key === "number2" && number.number2 === 0)||
+      (key === "number3" && number.number3 === 0)
       ){
         setNumber((prevState)=>({
           ...prevState,
           number:0,
-          number2:0
+          number2:0,
+          number3:0
         }))
       }
      
@@ -136,9 +140,26 @@ function AlathkarAlsabah() {
         </SwiperSlide>
 
         {/* 3 */}
-        {/* <SwiperSlide>
-
-        </SwiperSlide> */}
+        <SwiperSlide>
+        <div className={style.image}>
+          <img src={img1} alt="" onClick={()=>toggleAudio(5)}  key={5}/>
+           <h1><span>{number.number3}</span> مره</h1>
+          <img src={img2} alt="" onClick={()=>toggleAudio(6)} key={6}/>
+          <audio src={isPlaying === 5 ? audio5 : audio5} ref={(ref) => audioRef.current[5] = ref} />
+          <audio src={isPlaying === 6 ? audio6 : audio6} ref={(ref) => audioRef.current[6] = ref} />
+          </div>
+        <div className={style.text}>
+        <h4>بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</h4>
+          <p>
+           ٱللَّهُ لَاۤ إِلَـٰهَ إِلَّا هُوَ ٱلۡحَیُّ ٱلۡقَیُّومُۚ لَا تَأۡخُذُهُۥ سِنَةࣱ وَلَا نَوۡمࣱۚ لَّهُۥ مَا فِی ٱلسَّمَـٰوَ ٰ⁠تِ وَمَا فِی ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِی یَشۡفَعُ عِندَهُۥۤ إِلَّا بِإِذۡنِهِۦۚ یَعۡلَمُ مَا بَیۡنَ أَیۡدِیهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا یُحِیطُونَ بِشَیۡءࣲ مِّنۡ عِلۡمِهِۦۤ إِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرۡسِیُّهُ ٱلسَّمَـٰوَ ٰ⁠تِ وَٱلۡأَرۡضَۖ وَلَا یَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِیُّ ٱلۡعَظِیمُ  
+          </p>
+          <h6>[البقرة: 255]</h6>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number3')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>
+        </SwiperSlide>
 
 
 
