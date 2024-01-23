@@ -33,14 +33,36 @@
 /* text */
 
 .text{
-  margin: 40px;
+  margin: 5px;
+  margin-top: 30px;
 }
 .text h4{
   color: #BE6912;
+  font-size: 22px;
+  margin-bottom: 30px;
+
 }
 .text h6{
   display: flex;
   color: #C4C1BF;
+}
+.font{
+  font-size: 14px;
+}
+.text span{
+  color:#2CACB9;
+  font-size: 12px;
+ 
+}
+.font2{
+  font-size: 20px;
+}
+.text .mar{
+  margin-top: 100px;
+  padding: 10px;
+}
+.text .span{
+  padding: 30px;
 }
 
 /* button */
@@ -58,6 +80,7 @@
   border-radius: 100%;
   position: relative;
   transition: .3s;
+  margin-top: 20px;
 }
 
 .btn_class .back {
