@@ -13,7 +13,7 @@ const data = [
         id:2,
         image:img2,
         title:"أذكار المساء",
-        to:"/asmaallah",
+        to:"/alathkaralmsa",
     },
 ]
 
