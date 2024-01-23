@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "app.vercel.muslim_three.twa",
-        "sha256_cert_fingerprints": ["06:53:1D:4A:B6:31:2E:61:B2:03:8E:AE:A3:11:9D:CB:D9:67:99:E0:72:1A:3B:82:0B:36:70:13:6C:F7:20:39"]
-      }
-    }]

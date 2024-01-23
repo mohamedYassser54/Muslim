@@ -1,5 +1,5 @@
 import React from 'react'
-import app from "./Muslim.zip"
+import app from "./Muslim.apk"
 function Home() {
   return (
     <div>
