@@ -1,9 +1,9 @@
 import React from 'react'
-
+import app from "./Muslim.zip"
 function Home() {
   return (
     <div>
-     {/* <a href="https://muslim-five.vercel.app" download>قم بتحميل التطبيق</a> */}
+     <a href={app} download>قم بتحميل التطبيق</a>
     </div>
   ) 
 }
