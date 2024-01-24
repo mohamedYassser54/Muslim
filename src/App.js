@@ -17,6 +17,8 @@ const  AthkarMasjid2 = lazy(()=>import('./component/AllAlathkar/athkarMasjid2'))
 const  AthkarMasjid3 = lazy(()=>import('./component/AllAlathkar/athkarMasjid3'))
 const  Athkarduaa = lazy(()=>import('./component/AllAlathkar/athkarduaa'))
 const  Safar = lazy(()=>import('./component/AllAlathkar/safar'))
+const  Alathkaralnawm = lazy(()=>import('./component/AllAlathkar/alathkaralnawm'))
+
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
   return (
@@ -142,6 +144,19 @@ function App() {
             </div>
             </React.Suspense>
         }/>
+        {/*alathkaralnawm*/}
+     <Route path='/alathkaralnawm' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Alathkaralnawm/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+
+
+
         {/*DownloadApp*/}
      <Route path='/downloadApp' element={
           <React.Suspense fallback={<Loading/>}>

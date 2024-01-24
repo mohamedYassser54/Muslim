@@ -7,7 +7,13 @@ import img4 from "./image/4.png"
 import img5 from "./image/5.png"
 import img6 from "./image/6.png"
 import img7 from "./image/7.png"
-import img8 from "./image/8.png"
+import img8 from "./image/8.png" 
+import img9 from "./image/9.png" 
+import img10 from "./image/10.png" 
+import img11 from "./image/11.png" 
+import img12 from "./image/12.png" 
+import img13 from "./image/13.png" 
+import img14 from "./image/14.png" 
 const data = [
     {
         id:1,
@@ -43,19 +49,55 @@ const data = [
         id:7,
         image:img6,
         title:"أذكار النوم",
-        to:"/athkarMasjid3",
+        to:"/alathkaralnawm",
     },
     {
         id:8,
-        image:img7,
-        title:"دعاء من أصيب بمصيبة",
-        to:"/athkarduaa",
+        image:img13,
+        title:"دعاء الفزع عند النوم",
+        to:"/safar",
     },
     {
         id:9,
+        image:img14,
+        title:"أذكار الإستيقاظ من النوم",
+        to:"/safar",
+    },
+    {
+        id:10,
         image:img8,
         title:"دعاء السفر",
         to:"/safar",
+    },
+    {
+        id:11,
+        image:img9,
+        title:"دعاء صلاة الاستخارة",
+        to:"/safar",
+    },
+    {
+        id:12,
+        image:img10,
+        title:"الدعاء إذا رأى المطر",
+        to:"/safar",
+    },
+    {
+        id:14,
+        image:img11,
+        title:"دعاء لبس الثوب الجديد",
+        to:"/safar",
+    },
+    {
+        id:15,
+        image:img12,
+        title:"دعاء زيارة القبور",
+        to:"/safar",
+    },
+    {
+        id:16,
+        image:img7,
+        title:"دعاء من أصيب بمصيبة",
+        to:"/athkarduaa",
     },
 ]
 

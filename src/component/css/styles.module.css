@@ -48,7 +48,7 @@
   color: #C4C1BF;
 }
 .font{
-  font-size: 14px;
+  font-size: 15px;
 }
 .text span{
   color:#2CACB9;
@@ -64,6 +64,9 @@
 }
 .text .span{
   padding: 30px;
+}
+.text .font3{
+  font-size: 14px;
 }
 
 /* button */
