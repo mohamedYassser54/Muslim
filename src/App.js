@@ -68,7 +68,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkar/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
