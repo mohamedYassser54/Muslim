@@ -12,6 +12,12 @@ const Mawaqeet = lazy(()=>import('./component/Mawaqeet'))
 const Alathkar = lazy(()=>import('./component/Alathkar'))
 const Alathkaralsabah = lazy(()=>import('./component/AllAlathkar/alathkaralsabah'))
 const Alathkaralmsa = lazy(()=>import('./component/AllAlathkar/alathkaralmsa'))
+const  AthkarMasjid1 = lazy(()=>import('./component/AllAlathkar/athkarMasjid1'))
+const  AthkarMasjid2 = lazy(()=>import('./component/AllAlathkar/athkarMasjid2'))
+const  AthkarMasjid3 = lazy(()=>import('./component/AllAlathkar/athkarMasjid3'))
+const  Athkarduaa = lazy(()=>import('./component/AllAlathkar/athkarduaa'))
+const  Safar = lazy(()=>import('./component/AllAlathkar/safar'))
+const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
   return (
     <BrowserRouter>
@@ -82,6 +88,66 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralmsa/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*  AthkarMasjid1*/}
+     <Route path='/athkarMasjid1' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <AthkarMasjid1/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*  AthkarMasjid2*/}
+     <Route path='/athkarMasjid2' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <AthkarMasjid2/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*  AthkarMasjid3*/}
+     <Route path='/athkarMasjid3' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <AthkarMasjid3/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*athkarduaa*/}
+     <Route path='/athkarduaa' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Athkarduaa/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*safar*/}
+     <Route path='/safar' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Safar/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*DownloadApp*/}
+     <Route path='/downloadApp' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <DownloadApp/>
             <Footer/>
             </div>
             </React.Suspense>

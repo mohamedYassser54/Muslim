@@ -1,0 +1,34 @@
+.allDown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 100%;
+    margin: 20px;
+}
+.image img{
+    width: 150px;
+}
+.text h5{
+    font-size: 13px;
+}
+
+.allDown a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 100px;
+}
+.allDown a:hover{
+   transform: scale(1.1);
+}
+@media(max-width:601px){
+    .image img{
+        width: 80px;
+    }
+    .image .text h5{
+        font-size: 10px;
+    }
+}

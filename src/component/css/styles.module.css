@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
 }
-.mySwiper{
+.mySwiper,
+.mySwiper2{
   width:350px;
   height: 480px;
   border-radius: 20px;
@@ -118,7 +119,22 @@
   transform: translateY(0%);
   box-shadow: 0 0;
 }
+/* athkarMasjid */
+/* .image .color{
+  color: #fff;
+} */
+.mySwiper2{
+  /* background: #008dd4; */
+  /* color: #fff; */
+  /* box-shadow: none; */
+}
+.mySwiper2 p{
+  margin-top: 50px;
 
+}
+.mySwiper2 .p{
+  margin-top: 30px;
+}
 @media(max-width:601px){
   .mySwiper{
     width: 90%;

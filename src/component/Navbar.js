@@ -40,6 +40,7 @@ function NavBar() {
                   <NavLink to="/alathkar" className={style.colornav}>الأذكار</NavLink>
                   <NavLink to="/asmaallah" className={style.colornav}>اسماء الله الحسنى</NavLink>
                   <NavLink to="/Mawaqeet" className={style.colornav}>اوقات الصلاة</NavLink>
+                  <NavLink to="/downloadApp" className={style.colornav}>تحميل التطبيق</NavLink>
                 </Nav>
                
               </Offcanvas.Body>

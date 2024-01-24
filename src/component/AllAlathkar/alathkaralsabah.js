@@ -179,7 +179,7 @@ function AlathkarAlsabah() {
         <SwiperSlide>
           <div className={style.image}>
            <img src={img1} alt="" onClick={() => toggleAudio(1)} key={1} />
-           <h1><span>{number.number}</span> مره</h1>
+           <h1><span>{number.number}</span> </h1>
            <img src={img2} alt="" onClick={() => toggleAudio(2)} key={2} />
            <audio src={isPlaying === 1 ? audio : audio} ref={(ref) => audioRef.current[1] = ref} />
           <audio  src={isPlaying === 2 ? audio2 : audio2} ref={(ref) => audioRef.current[2] = ref} />
@@ -209,7 +209,7 @@ function AlathkarAlsabah() {
         <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(4)}  key={4}/>
-           <h1><span>{number.number2}</span> مره</h1>
+           <h1><span>{number.number2}</span> </h1>
           <img src={img2} alt="" onClick={()=>toggleAudio(3)} key={3}/>
           <audio src={isPlaying === 3 ? audio3 : audio3} ref={(ref) => audioRef.current[3] = ref} />
           <audio src={isPlaying === 4 ? audio4 : audio4} ref={(ref) => audioRef.current[4] = ref} />
@@ -231,7 +231,7 @@ function AlathkarAlsabah() {
         <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(5)}  key={5}/>
-           <h1><span>{number.number3}</span> مره</h1>
+           <h1><span>{number.number3}</span> </h1>
           <img src={img2} alt="" onClick={()=>toggleAudio(6)} key={6}/>
           <audio src={isPlaying === 5 ? audio5 : audio5} ref={(ref) => audioRef.current[5] = ref} />
           <audio src={isPlaying === 6 ? audio6 : audio6} ref={(ref) => audioRef.current[6] = ref} />
@@ -274,7 +274,7 @@ function AlathkarAlsabah() {
         <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(9)}  key={9}/>
-           <h1><span>{number.number5}</span> مرات</h1>
+           <h1><span>{number.number5}</span> </h1>
           <img src={img2} alt="" onClick={()=>toggleAudio(10)} key={10}/>
           <audio src={isPlaying === 9 ? audio9 : audio9} ref={(ref) => audioRef.current[9] = ref} />
           <audio src={isPlaying === 10 ? audio10 : audio10} ref={(ref) => audioRef.current[10] = ref} />
@@ -296,7 +296,7 @@ function AlathkarAlsabah() {
         <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(11)}  key={11}/>
-           <h1><span>{number.number6}</span> مرات</h1>
+           <h1><span>{number.number6}</span> </h1>
           <img src={img2} alt="" onClick={()=>toggleAudio(12)} key={12}/>
           <audio src={isPlaying === 11 ? audio11 : audio11} ref={(ref) => audioRef.current[11] = ref} />
           <audio src={isPlaying === 12 ? audio12 : audio12} ref={(ref) => audioRef.current[12] = ref} />
@@ -317,7 +317,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(13)}  key={13}/>
-           <h1><span>{number.number7}</span> مرات</h1>
+           <h1><span>{number.number7}</span> </h1>
           <img src={img2} alt="" onClick={()=>toggleAudio(14)} key={14}/>
           <audio src={isPlaying === 13 ? audio13 : audio13} ref={(ref) => audioRef.current[13] = ref} />
           <audio src={isPlaying === 14 ? audio14 : audio14} ref={(ref) => audioRef.current[14] = ref} />
@@ -337,7 +337,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number8}</span> مره</h1>
+         <h1><span>{number.number8}</span> </h1>
          </div>
         <div className={style.text}>
         <h4>بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</h4>
@@ -363,7 +363,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number9}</span> مرات</h1>
+         <h1><span>{number.number9}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -381,7 +381,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number10}</span> مرات</h1>
+         <h1><span>{number.number10}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -398,7 +398,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number11}</span> مرات</h1>
+         <h1><span>{number.number11}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -416,7 +416,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number12}</span> مرات</h1>
+         <h1><span>{number.number12}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -433,7 +433,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number13}</span> مرات</h1>
+         <h1><span>{number.number13}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -449,7 +449,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number14}</span> مره</h1>
+         <h1><span>{number.number14}</span> </h1>
          </div>
         <div className={style.text}>
           <p>
@@ -465,7 +465,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number15}</span> مرات</h1>
+         <h1><span>{number.number15}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -484,7 +484,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number16}</span> مره</h1>
+         <h1><span>{number.number16}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -501,7 +501,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number17}</span> مرات</h1>
+         <h1><span>{number.number17}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -519,7 +519,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number18}</span> مره</h1>
+         <h1><span>{number.number18}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -538,7 +538,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number19}</span> مرات</h1>
+         <h1><span>{number.number19}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -555,7 +555,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number20}</span> مرات</h1>
+         <h1><span>{number.number20}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -571,7 +571,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number21}</span> مره</h1>
+         <h1><span>{number.number21}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -588,7 +588,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number22}</span> مره</h1>
+         <h1><span>{number.number22}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
@@ -606,7 +606,7 @@ function AlathkarAlsabah() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number23}</span> مرات</h1>
+         <h1><span>{number.number23}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
