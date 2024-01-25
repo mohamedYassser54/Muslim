@@ -18,6 +18,13 @@ const  AthkarMasjid3 = lazy(()=>import('./component/AllAlathkar/athkarMasjid3'))
 const  Athkarduaa = lazy(()=>import('./component/AllAlathkar/athkarduaa'))
 const  Safar = lazy(()=>import('./component/AllAlathkar/safar'))
 const  Alathkaralnawm = lazy(()=>import('./component/AllAlathkar/alathkaralnawm'))
+const  Sleep = lazy(()=>import('./component/AllAlathkar/Sleep'))
+const  Wakeup = lazy(()=>import('./component/AllAlathkar/wakeup'))
+const  Istikhara = lazy(()=>import('./component/AllAlathkar/istikhara'))
+const  Rain = lazy(()=>import('./component/AllAlathkar/rain'))
+const  Newclothes = lazy(()=>import('./component/AllAlathkar/newclothes'))
+const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
+const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
@@ -150,6 +157,76 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralnawm/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*Sleep*/}
+     <Route path='/sleep' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Sleep/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*wake up*/}
+     <Route path='/wakeup' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Wakeup/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*Istikhara*/}
+     <Route path='/istikhara' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Istikhara/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*rain*/}
+     <Route path='/rain' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Rain/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/*Newclothes*/}
+     <Route path='/newclothes' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Newclothes/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Maqaber */}
+     <Route path='/maqaber' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Maqaber/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Mosiba */}
+     <Route path='/mosiba' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Mosiba/>
             <Footer/>
             </div>
             </React.Suspense>

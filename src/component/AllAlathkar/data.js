@@ -55,13 +55,13 @@ const data = [
         id:8,
         image:img13,
         title:"دعاء الفزع عند النوم",
-        to:"/safar",
+        to:"/Sleep",
     },
     {
         id:9,
         image:img14,
         title:"أذكار الإستيقاظ من النوم",
-        to:"/safar",
+        to:"/Wakeup",
     },
     {
         id:10,
@@ -73,31 +73,31 @@ const data = [
         id:11,
         image:img9,
         title:"دعاء صلاة الاستخارة",
-        to:"/safar",
+        to:"/istikhara",
     },
     {
         id:12,
         image:img10,
         title:"الدعاء إذا رأى المطر",
-        to:"/safar",
+        to:"/rain",
     },
     {
         id:14,
         image:img11,
         title:"دعاء لبس الثوب الجديد",
-        to:"/safar",
+        to:"/newclothes",
     },
     {
         id:15,
         image:img12,
         title:"دعاء زيارة القبور",
-        to:"/safar",
+        to:"/maqaber",
     },
     {
         id:16,
         image:img7,
         title:"دعاء من أصيب بمصيبة",
-        to:"/athkarduaa",
+        to:"/mosiba",
     },
 ]
 
