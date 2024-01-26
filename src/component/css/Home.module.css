@@ -1,0 +1,30 @@
+.Home{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    width:400px;
+}
+.Home h1{
+    /* margin-right: 200px; */
+    font-size: 100px;
+    background: linear-gradient(to left, #4A94C2,#235E83);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media(max-width:735px){
+    .Home{
+        display: block;
+    }
+    .Home h1{
+        font-size:70px ;
+    }
+    .img img{
+        width:300px;
+    }
+}

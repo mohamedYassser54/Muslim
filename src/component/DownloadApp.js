@@ -1,11 +1,12 @@
 import React from 'react'
 import img4 from './image/4.png'
-import img5 from './image/5.png'
+import img5 from './image/7.png'
 import app from "./Muslim.apk"
 import style from './css/download.module.css'
 function DownloadApp() {
   return (
     <div className={style.allDown}>
+    <div className={style.bac}>
       <a href={app} download>
       <div className={style.image}>
         <img src={img4} alt="" />
@@ -22,6 +23,7 @@ function DownloadApp() {
         </div>
       </div>
       </a>
+    </div>
     </div>
   )
 }

@@ -14,6 +14,7 @@ import img11 from "./image/11.png"
 import img12 from "./image/12.png" 
 import img13 from "./image/13.png" 
 import img14 from "./image/14.png" 
+import img15 from "./image/15.png" 
 const data = [
     {
         id:1,
@@ -98,6 +99,12 @@ const data = [
         image:img7,
         title:"دعاء من أصيب بمصيبة",
         to:"/mosiba",
+    },
+    {
+        id:17,
+        image:img15,
+        title:"رسالة لك",
+        to:"/message",
     },
 ]
 

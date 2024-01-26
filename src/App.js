@@ -25,6 +25,7 @@ const  Rain = lazy(()=>import('./component/AllAlathkar/rain'))
 const  Newclothes = lazy(()=>import('./component/AllAlathkar/newclothes'))
 const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
 const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
+const  Message = lazy(()=>import('./component/AllAlathkar/Message'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
@@ -45,7 +46,7 @@ function App() {
             <div>
               <Navbar/>
             <Home/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -227,6 +228,16 @@ function App() {
             <div>
               <Navbar/>
             <Mosiba/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Message */}
+     <Route path='/message' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Message/>
             <Footer/>
             </div>
             </React.Suspense>

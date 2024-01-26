@@ -1,17 +1,27 @@
 .allDown{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
+}
+.bac{
+    display: flex;
 }
 .image{
-    width: 100%;
+    display: flex;
+    background: #000;
     margin: 20px;
+    padding: 10px;
+    border-radius:20px;
 }
 .image img{
-    width: 150px;
+    width: 50px;
 }
 .text h5{
+    color: #fff;
     font-size: 13px;
+    margin-top: 16px;
 }
 
 .allDown a{
@@ -25,10 +35,11 @@
    transform: scale(1.1);
 }
 @media(max-width:601px){
-    .image img{
-        width: 80px;
+    
+    .bac{
+       
+        display: block;
+      
     }
-    .image .text h5{
-        font-size: 10px;
-    }
+   
 }
