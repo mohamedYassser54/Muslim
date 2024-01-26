@@ -7,3 +7,119 @@
     justify-content: center;
     color: #fff;
 }
+/* play_btn */
+.container {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .play_btn {
+    position: absolute;
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#4A94C2, #4A94C2);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .play_btn::before {
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 93%;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .play_btn:checked {
+    animation: borderAnimate 700ms ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes borderAnimate {
+    0% {
+      transform: rotate(0);
+      background: conic-gradient(#4A94C2, transparent 20%);
+    }
+  
+    80% {
+      background: conic-gradient(#4A94C2, transparent 90%);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      background: conic-gradient(#4A94C2, #4A94C2);
+    }
+  }
+  
+  .play_icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20%;
+    top: 55%;
+    background-color: #4A94C2;
+    transform: translate(-60%, -50%) rotate(90deg);
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .play_btn:checked + .play_icon {
+    clip-path: polygon(0 100%, 0% 100%, 100% 100%);
+  }
+  
+  .pause_icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 8%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .pause_icon::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #4A94C2;
+    left: 0;
+  }
+  
+  .pause_icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #4A94C2;
+    right: 0;
+  }
+  
+  .play_btn:checked ~ .pause_icon::before {
+    animation: reveal 300ms ease-in-out 350ms 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .play_btn:checked ~ .pause_icon::after {
+    animation: reveal 300ms ease-in-out 600ms 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes reveal {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 35%;
+    }
+  }

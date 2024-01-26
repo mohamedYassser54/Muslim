@@ -6,8 +6,8 @@ function Btn() {
   return (
     <div className={style.Btnall}>
     <NavLink to="/alathkar" className={style.btn}>
-  Get started
-  <div className={style.icon}>
+    بدء الاستخدام  
+    <div className={style.icon}>
     <svg
       height="24"
       width="24"

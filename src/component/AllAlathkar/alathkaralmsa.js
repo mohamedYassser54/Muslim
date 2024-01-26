@@ -148,12 +148,10 @@ function Aathkaralmsa() {
 
   function toggleAudio(key) {
     const audio = audioRef.current[key];
-  
-    // Check if the audio object is defined
     if (audio) {
       if (isPlaying === key && !audio.paused) {
         audio.pause();
-        setIsPlaying(0); // Set to a value that doesn't match any key
+        setIsPlaying(0); 
       } else {
         audio.play();
         setIsPlaying(key);
