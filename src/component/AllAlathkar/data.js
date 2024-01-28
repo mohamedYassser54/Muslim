@@ -16,6 +16,7 @@ import img13 from "./image/13.png"
 import img14 from "./image/14.png" 
 import img15 from "./image/15.png" 
 import img16 from "./image/17.png" 
+import img18 from "./image/18.png" 
 const data = [
     {
         id:1,
@@ -112,6 +113,12 @@ const data = [
         image:img16,
         title:"مسابقة",
         to:"/game",
+    },
+    {
+        id:18,
+        image:img18,
+        title:"أطفال",
+        to:"/Child",
     },
 ]
 

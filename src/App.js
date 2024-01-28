@@ -27,7 +27,8 @@ const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
 const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
 const  Message = lazy(()=>import('./component/AllAlathkar/Message'))
 const  Game = lazy(()=>import('./component/AllAlathkar/game'))
-// const  AlNaqshabandi = lazy(()=>import('./component/AllAlathkar/DataDuaaAndIbtihalat/AlNaqshabandi'))
+const  Child = lazy(()=>import('./component/AllAlathkar/child'))
+
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
@@ -254,16 +255,16 @@ function App() {
             </div>
             </React.Suspense>
         }/>
-        {/* AlNaqshabandi */}
-        {/* <Route path='AlNaqshabandi' element={
+        {/* Child */}
+        <Route path='/Child' element={
           <React.Suspense fallback={<Loading/>}>
             <div>
             <Navbar/>
-            <AlNaqshabandi/>
+            <Child/>
             <Footer/>
             </div>
             </React.Suspense>
-        }/> */}
+        }/>
 
 
 
