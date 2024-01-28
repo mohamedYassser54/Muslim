@@ -26,6 +26,8 @@ const  Newclothes = lazy(()=>import('./component/AllAlathkar/newclothes'))
 const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
 const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
 const  Message = lazy(()=>import('./component/AllAlathkar/Message'))
+const  Game = lazy(()=>import('./component/AllAlathkar/game'))
+// const  AlNaqshabandi = lazy(()=>import('./component/AllAlathkar/DataDuaaAndIbtihalat/AlNaqshabandi'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
@@ -242,6 +244,30 @@ function App() {
             </div>
             </React.Suspense>
         }/>
+        {/* game */}
+     <Route path='/game' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+            <Game/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* AlNaqshabandi */}
+        {/* <Route path='AlNaqshabandi' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlNaqshabandi/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/> */}
+
+
+
+        {/* END DuaaAndIbtihalat */}
 
 
 

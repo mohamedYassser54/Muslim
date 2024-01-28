@@ -15,6 +15,7 @@ import img12 from "./image/12.png"
 import img13 from "./image/13.png" 
 import img14 from "./image/14.png" 
 import img15 from "./image/15.png" 
+import img16 from "./image/17.png" 
 const data = [
     {
         id:1,
@@ -106,6 +107,14 @@ const data = [
         title:"رسالة لك",
         to:"/message",
     },
+    {
+        id:18,
+        image:img16,
+        title:"مسابقة",
+        to:"/game",
+    },
 ]
 
 export default data;
+
+
