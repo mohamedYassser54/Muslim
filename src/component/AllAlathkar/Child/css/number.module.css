@@ -1,0 +1,34 @@
+.cards{
+    width: 90px;
+    border: 2px solid #2d93d3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.cards img{
+    width:70px;
+    height: 60px;
+    margin-right: 6px;
+}
+/* .link{
+    text-decoration: none;
+    color: #2d93d3;
+}
+.cards h6{
+    font-size: 15px;
+    margin-top:5px;
+} */
+.video{
+   width:100%;
+    height:500px;
+    padding: 10px;
+    
+}
+@media(max-width:601px){
+    /* .video{
+        width: 90%;
+        height:500px;
+    } */
+}

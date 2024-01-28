@@ -33,6 +33,10 @@ body {
   display: block;
   width: 90%;
 }
+.NavLink{
+  text-decoration: none;
+  color: #000;
+}
 
 @media(max-width:601px){
   .swiper{

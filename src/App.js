@@ -27,7 +27,10 @@ const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
 const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
 const  Message = lazy(()=>import('./component/AllAlathkar/Message'))
 const  Game = lazy(()=>import('./component/AllAlathkar/game'))
-const  Child = lazy(()=>import('./component/AllAlathkar/child'))
+const  Child = lazy(()=>import('./component/AllAlathkar/child')) 
+const  Stories  = lazy(()=>import('./component/AllAlathkar/Child/Stories')) 
+const  AlInsanFeAlQuran  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/AlInsanFeAlQuran')) 
+const  One  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/one')) 
 
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
@@ -266,7 +269,36 @@ function App() {
             </React.Suspense>
         }/>
 
-
+        {/* Stories */}
+        <Route path='/Stories' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Stories/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* AlInsanFeAlQuran */}
+        <Route path='/AlInsanFeAlQuran' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlInsanFeAlQuran/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* One */}
+        <Route path='/One' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <One/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
 
         {/* END DuaaAndIbtihalat */}
 

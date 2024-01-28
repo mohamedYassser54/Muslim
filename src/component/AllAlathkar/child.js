@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { NavLink } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 
-import img from './Child/image/1.png'
+import img from './Child/image/4.png'
 import img2 from './Child/image/2.png'
 import img3 from './Child/image/3.png'
 
@@ -33,8 +34,10 @@ function Child() {
         className="mySwiper"
       >
         <SwiperSlide>
+          <NavLink  to="/Stories" className="NavLink">
           <img src={img} />
-          <h1>مسلسلات</h1>
+          <h1>قصص الأنبياء</h1>
+          </NavLink>
         </SwiperSlide>
         <SwiperSlide>
           <img src={img2} />
