@@ -60,6 +60,8 @@ const  TwentySeven  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAl
 const  TwentyEight  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyEight')) 
 const  TwentyNine  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyNine')) 
 const  Thirty  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Thirty')) 
+const  AlSiraAlNabawiya  = lazy(()=>import('./component/AllAlathkar/Child/AlSiraAlNabawiya/AlSiraAlNabawiya')) 
+const  YunusAlihAlsalam  = lazy(()=>import('./component/AllAlathkar/Child/YunusAlihAlsalam/YunusAlihAlsalam')) 
 
 
 
@@ -629,6 +631,33 @@ function App() {
 
 
          {/* End AlInsanFeAlQuran */}
+
+
+         {/* Al Sira Al Nabawiya */}
+         <Route path='/AlSiraAlNabawiya' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlSiraAlNabawiya/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+         {/*End Al Sira Al Nabawiya */}
+
+         {/* YunusAlihAlsalam */}
+         <Route path='/YunusAlihAlsalam' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <YunusAlihAlsalam/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* End YunusAlihAlsalam */}
+
+
         {/* END Child */}
 
 

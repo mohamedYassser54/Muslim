@@ -36,7 +36,7 @@ function Child() {
         <SwiperSlide>
           <NavLink  to="/Stories" className="NavLink">
           <img src={img} />
-          <h1>قصص الأنبياء</h1>
+          <h1>حكايات</h1>
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
