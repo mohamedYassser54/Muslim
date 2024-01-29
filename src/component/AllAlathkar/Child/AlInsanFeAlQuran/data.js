@@ -178,7 +178,7 @@ const  data =[
     },
     {
         id:30,
-        image:img18,
+        image:img30,
         to:"/Thirty"
     },
 ]

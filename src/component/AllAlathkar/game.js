@@ -120,7 +120,7 @@ function Game() {
       {gameOver ? (
         <div className={style.end}>
           <h1>انتهت اللعبة</h1>
-          <p>نهاية اللعبة! النقاط الإجمالية: 30/{score}</p>
+          <p>نهاية اللعبة! النقاط الإجمالية: 33/{score}</p>
           <button onClick={onClick} className={style.reload}>العب مرة أخري</button>
         </div>
       ) : questions.length > 0 ? (
