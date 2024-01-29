@@ -31,6 +31,36 @@ const  Child = lazy(()=>import('./component/AllAlathkar/child'))
 const  Stories  = lazy(()=>import('./component/AllAlathkar/Child/Stories')) 
 const  AlInsanFeAlQuran  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/AlInsanFeAlQuran')) 
 const  One  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/one')) 
+const  Two  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/two')) 
+const  Three  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/three')) 
+const  Four  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/four')) 
+const  Five  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/five')) 
+const  Six  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/six')) 
+const  Seven  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/seven')) 
+const  Eight  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/eight')) 
+const  Nine  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/nine')) 
+const  Ten  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Ten')) 
+const  Eleven  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Eleven')) 
+const  Twelve  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Twelve')) 
+const  Thirteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Thirteen')) 
+const  Fourteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Fourteen')) 
+const  Fifteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Fifteen')) 
+const  Sixteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Sixteen')) 
+const  Seventeen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Seventeen')) 
+const  Eighteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Eighteen')) 
+const  Nineteen  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Nineteen')) 
+const  Twenty  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Twenty')) 
+const  TwentyOne  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyOne')) 
+const  TwentyTwo  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyTwo')) 
+const  TwentyThree  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyThree')) 
+const  TwentyFour  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyFour')) 
+const  TwentyFive  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyFive')) 
+const  TwentySix  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentySix')) 
+const  TwentySeven  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentySeven')) 
+const  TwentyEight  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyEight')) 
+const  TwentyNine  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyNine')) 
+const  Thirty  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Thirty')) 
+
 
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
@@ -258,6 +288,11 @@ function App() {
             </div>
             </React.Suspense>
         }/>
+
+
+
+
+
         {/* Child */}
         <Route path='/Child' element={
           <React.Suspense fallback={<Loading/>}>
@@ -285,7 +320,7 @@ function App() {
             <div>
             <Navbar/>
             <AlInsanFeAlQuran/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -299,8 +334,302 @@ function App() {
             </div>
             </React.Suspense>
         }/>
+        {/* Two */}
+        <Route path='/Two' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Two/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Three */}
+        <Route path='/Three' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Three/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Four */}
+        <Route path='/Four' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Four/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Five */}
+        <Route path='/Five' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Five/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Six */}
+        <Route path='/Six' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Six/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Seven */}
+        <Route path='/Seven' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Seven/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Eight */}
+        <Route path='/Eight' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Eight/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Nine */}
+        <Route path='/Nine' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nine/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
 
-        {/* END DuaaAndIbtihalat */}
+        {/* Ten */}
+        <Route path='/Ten' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Ten/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Eleven */}
+        <Route path='/Eleven' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Eleven/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Twelve */}
+        <Route path='/Twelve' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Twelve/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Thirteen */}
+        <Route path='/Thirteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Thirteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Fourteen */}
+        <Route path='/Fourteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Fourteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Fifteen */}
+        <Route path='/Fifteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Fifteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Sixteen */}
+        <Route path='/Sixteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Sixteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+
+        {/* Seventeen */}
+        <Route path='/Seventeen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Seventeen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Eighteen */}
+        <Route path='/Eighteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Eighteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Nineteen */}
+        <Route path='/Nineteen' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nineteen/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Twenty */}
+        <Route path='/Twenty' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Twenty/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyOne */}
+        <Route path='/TwentyOne' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyOne/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyTwo */}
+        <Route path='/TwentyTwo' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyTwo/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyThree */}
+        <Route path='/TwentyThree' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyThree/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyFour */}
+        <Route path='/TwentyFour' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyFour/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyFive */}
+        <Route path='/TwentyFive' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyFive/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentySix */}
+        <Route path='/TwentySix' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentySix/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentySeven */}
+        <Route path='/TwentySeven' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentySeven/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyEight */}
+        <Route path='/TwentyEight' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyEight/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* TwentyNine */}
+        <Route path='/TwentyNine' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <TwentyNine/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+        {/* Thirty */}
+        <Route path='/Thirty' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Thirty/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+        }/>
+
+
+         {/* End AlInsanFeAlQuran */}
+        {/* END Child */}
 
 
 
