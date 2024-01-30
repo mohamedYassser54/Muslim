@@ -26,7 +26,7 @@ const  data =[
         id:4,
         image:img4,
         title:`التربية السليمة`,
-        to:"#"
+        to:"/التنشئةالسليمة"
     },
 ]
 export default data;

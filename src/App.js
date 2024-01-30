@@ -62,6 +62,11 @@ const  TwentyNine  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQ
 const  Thirty  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Thirty')) 
 const  AlSiraAlNabawiya  = lazy(()=>import('./component/AllAlathkar/Child/AlSiraAlNabawiya/AlSiraAlNabawiya')) 
 const  YunusAlihAlsalam  = lazy(()=>import('./component/AllAlathkar/Child/YunusAlihAlsalam/YunusAlihAlsalam')) 
+const  AllVideo  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/AllVideo')) 
+const  Teknologia  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Teknologia')) 
+const  Alkhayer  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Alkhayer')) 
+const  Esthlak  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Esthlak')) 
+const  Family  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Family')) 
 
 
 
@@ -656,6 +661,60 @@ function App() {
             </React.Suspense>
             }/>
          {/* End YunusAlihAlsalam */}
+
+         {/* التنشئةالسليمة */}
+         <Route path='/التنشئةالسليمة' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AllVideo/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+
+         {/* Teknologia */}
+         <Route path='/Teknologia' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Teknologia/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Alkhayer */}
+         <Route path='/Alkhayer' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Alkhayer/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Esthlak */}
+         <Route path='/Esthlak' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Esthlak/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Family */}
+         <Route path='/Family' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Family/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+
+         {/* End التنشئةالسليمة */}
 
 
         {/* END Child */}
