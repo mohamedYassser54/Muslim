@@ -88,6 +88,16 @@ const  LearnSalah1  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All
 const  LearnSalah2  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnSalah2')) 
 const  LearnSalah3  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnSalah3')) 
 
+// Nasheed
+const  Songs  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/Songs')) 
+const  Nasheed1  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed1')) 
+const  Nasheed2  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed2')) 
+const  Nasheed3  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed3')) 
+const  Nasheed4  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed4')) 
+const  Nasheed5  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed5')) 
+const  Nasheed6  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed6')) 
+const  Nasheed7  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed7')) 
+const  Nasheed8  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed8')) 
 
 
 
@@ -820,9 +830,104 @@ function App() {
             }/>
          {/* End Al */}
 
+
+        {/* Nasheed */}
+        <Route path='/Nasheed' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Songs/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+
+        {/* Nasheed1 */}
+        <Route path='/Nasheed1' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed1/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed2 */}
+        <Route path='/Nasheed2' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed2/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed3 */}
+        <Route path='/Nasheed3' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed3/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed4 */}
+        <Route path='/Nasheed4' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed4/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed5 */}
+        <Route path='/Nasheed5' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed5/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed6 */}
+        <Route path='/Nasheed6' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed6/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed7 */}
+        <Route path='/Nasheed7' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed7/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+        {/* Nasheed8 */}
+        <Route path='/Nasheed8' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nasheed8/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+
+
+        {/*End Nasheed */}
+
+
         {/* END Child */}
-
-
 
         {/*DownloadApp*/}
      <Route path='/downloadApp' element={

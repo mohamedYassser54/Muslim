@@ -40,14 +40,16 @@ function Child() {
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
-          <NavLink to="/AlSalah" className="NavLink">
+        <NavLink  to="/AlSalah" className="NavLink">
           <img src={img2} />
           <h1>صلاة</h1>
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
+        <NavLink  to="/Nasheed" className="NavLink">
           <img src={img3} />
           <h1>أناشيد</h1>
+          </NavLink>
         </SwiperSlide>
        
       </Swiper>
