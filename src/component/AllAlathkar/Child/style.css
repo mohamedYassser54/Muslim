@@ -13,13 +13,15 @@ body {
   /* margin: 0;
   padding: 0; */
 }
-/* .AllSwiper{
-
-} */
+.AllSwiper{
+  /* margin-top: 150px; */
+}
 .swiper {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 200px;
   padding-bottom: 50px;
+ 
+
 }
 
 .swiper-slide {
@@ -27,11 +29,13 @@ body {
   background-size: cover;
   width: 300px;
   height: 300px;
+
 }
 
 .swiper-slide img {
   display: block;
   width: 90%;
+
 }
 .NavLink{
   text-decoration: none;
@@ -40,12 +44,12 @@ body {
 
 @media(max-width:601px){
   .swiper{
-    margin-top: 200px;
+    padding-top: 350px;
   }
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }

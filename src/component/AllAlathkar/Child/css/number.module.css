@@ -1,3 +1,6 @@
+.Number{
+    margin-top: 150px;
+}
 .cards{
     width: 90px;
     border: 2px solid #2d93d3;
@@ -25,6 +28,7 @@
     height:500px;
     padding: 10px;
     border-radius:50px;
+    margin-top: 150px;
 }
 @media(max-width:601px){
     /* .video{

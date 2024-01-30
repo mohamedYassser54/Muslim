@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import style from '../../css/alathkar.module.css'
 import data from './dataStories';
+import style from '../../css/alathkar.module.css'
+
 function Stories () {
   return (
-    <div>
+    <div className={style.Alathkar}>
        <section className="py-4 container ">
         <div className="row justify-content-center">
             {data && data.map((item)=>(

@@ -12,7 +12,7 @@ function NavBar() {
     const expand = "lg";
   return (
     <>
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-4 p-4" style={{boxShadow:"0 0 8px #89b3e3"}}>
+        <Navbar key={expand} expand={expand} className={`bg-body-tertiary mb-4 p-4 ${style.Navbar}`} style={{boxShadow:"0 0 8px #89b3e3"}}>
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

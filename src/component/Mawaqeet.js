@@ -25,7 +25,7 @@ function Mawaqeet() {
       };
     
   return (
-    <div>
+    <div className={style.Mawaqeet}>
         <div className={style.allselect}>
         <div className="select">
         <select value={selectedCountry} onChange={handleCountryChange}>

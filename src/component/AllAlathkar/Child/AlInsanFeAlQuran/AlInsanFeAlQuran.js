@@ -4,7 +4,7 @@ import data from './data';
 import style from '../css/number.module.css'
 function AlInsanFeAlQuran() {
   return (
-    <div>
+    <div className={style.Number}>
     <section className="py-4 container ">
      <div className="row justify-content-center">
          {data && data.map((item)=>(
