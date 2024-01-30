@@ -1,11 +1,11 @@
-.Navbar{
+/* .Navbar{
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 100;
    
-}
+} */
 .brand,
 .brand2{
     background: linear-gradient(to left, #4A94C2,#235E83);

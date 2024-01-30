@@ -14,6 +14,7 @@ function AlSalah() {
                 <div className={style.cards}>
                     <NavLink to={item.to} key={item.id} className={style.link}>
                     <img src={item.image} className={style.img} />
+                    <h6>{item.title}</h6>
                     </NavLink>
                 </div>
               </div>

@@ -13,15 +13,13 @@ body {
   /* margin: 0;
   padding: 0; */
 }
-.AllSwiper{
-  /* margin-top: 150px; */
-}
+/* .AllSwiper{
+
+} */
 .swiper {
   width: 100%;
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 50px;
- 
-
 }
 
 .swiper-slide {
@@ -29,13 +27,11 @@ body {
   background-size: cover;
   width: 300px;
   height: 300px;
-
 }
 
 .swiper-slide img {
   display: block;
   width: 90%;
-
 }
 .NavLink{
   text-decoration: none;
@@ -44,7 +40,7 @@ body {
 
 @media(max-width:601px){
   .swiper{
-    padding-top: 350px;
+    margin-top: 150px;
   }
   .swiper-slide {
     background-position: center;
