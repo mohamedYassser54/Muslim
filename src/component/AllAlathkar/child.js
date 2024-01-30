@@ -36,19 +36,19 @@ function Child() {
         <SwiperSlide>
           <NavLink  to="/Stories" className="NavLink">
           <img src={img} />
-          <h1>حكايات</h1>
+          <h1 className='textslide'>حكايات</h1>
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
         <NavLink  to="/AlSalah" className="NavLink">
           <img src={img2} />
-          <h1>صلاة</h1>
+          <h1 className='textslide'>صلاة</h1>
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
         <NavLink  to="/Nasheed" className="NavLink">
           <img src={img3} />
-          <h1>أناشيد</h1>
+          <h1 className='textslide'>أناشيد</h1>
           </NavLink>
         </SwiperSlide>
        

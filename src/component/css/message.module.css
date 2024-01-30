@@ -80,3 +80,9 @@ background: linear-gradient(90deg, rgba(39,46,115,1) 0%, rgba(39,49,120,1) 0%, r
         font-size: 15px;
     }
    }
+
+   @media (max-height: 745px){
+    .text{
+        height: 250px;
+    }
+   }

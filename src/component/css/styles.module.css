@@ -146,3 +146,38 @@
     width: 90%;
   }
 }
+@media (max-height: 745px){
+  .mySwiper,
+.mySwiper2{
+  height: 330px;
+}
+.btn_class{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin: 10px;
+}
+.text{
+  margin: 5px;
+  margin-top: 7px;
+}
+.text p{
+  margin: 0;
+}
+.text h4{
+  margin-bottom: 5px;
+}
+.text .mar{
+  margin-top: 50px;
+}
+.font{
+  font-size: 14px;
+}
+.image{
+  padding: 1px;
+}
+.mySwiper2 .p{
+  margin-top: 15px;
+}
+
+}

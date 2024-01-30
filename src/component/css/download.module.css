@@ -43,3 +43,9 @@
     }
    
 }
+@media (max-height: 745px){
+    .allDown{
+    margin-top: 0;
+
+    }
+}

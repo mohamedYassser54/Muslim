@@ -72,3 +72,31 @@
         margin: 13px;
     }
 }
+@media (max-height: 684px) {
+    .Allcard{
+        margin-top: 30px;
+       
+    }
+    .Game img{
+        width: 100px;
+    }
+    .Allcard p{
+        font-size:15px;
+    }
+    .Game .card {
+        width: 80%;
+        height: 170px;
+    }
+    .Allcard button{
+       padding: 5px;
+      font-size: 14px;
+      margin: 15px;
+
+    }
+    .end h1{
+        font-size: 20px;
+    }
+    .end p{
+        font-size: 15px;
+    }
+}
