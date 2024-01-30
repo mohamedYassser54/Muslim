@@ -27,8 +27,12 @@ const  Maqaber = lazy(()=>import('./component/AllAlathkar/al-maqaber'))
 const  Mosiba = lazy(()=>import('./component/AllAlathkar/mosiba'))
 const  Message = lazy(()=>import('./component/AllAlathkar/Message'))
 const  Game = lazy(()=>import('./component/AllAlathkar/game'))
+
+// child
 const  Child = lazy(()=>import('./component/AllAlathkar/child')) 
 const  Stories  = lazy(()=>import('./component/AllAlathkar/Child/Stories')) 
+
+// AlInsanFeAlQuran
 const  AlInsanFeAlQuran  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/AlInsanFeAlQuran')) 
 const  One  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/one')) 
 const  Two  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/two')) 
@@ -60,13 +64,30 @@ const  TwentySeven  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAl
 const  TwentyEight  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyEight')) 
 const  TwentyNine  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/TwentyNine')) 
 const  Thirty  = lazy(()=>import('./component/AllAlathkar/Child/AlInsanFeAlQuran/number/Thirty')) 
+
+// AlSiraAlNabawiya
 const  AlSiraAlNabawiya  = lazy(()=>import('./component/AllAlathkar/Child/AlSiraAlNabawiya/AlSiraAlNabawiya')) 
+
+// YunusAlihAlsalam
 const  YunusAlihAlsalam  = lazy(()=>import('./component/AllAlathkar/Child/YunusAlihAlsalam/YunusAlihAlsalam')) 
+
+// VideoKids
 const  AllVideo  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/AllVideo')) 
 const  Teknologia  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Teknologia')) 
 const  Alkhayer  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Alkhayer')) 
 const  Esthlak  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Esthlak')) 
 const  Family  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Family')) 
+const  Exam  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Exam')) 
+const  Namima  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Namima')) 
+
+// AlSalah
+const  AlSalah  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/AlSalah')) 
+const  Ablution  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/Ablution')) 
+const  LearnPray  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnPray')) 
+const  LearnSalah1  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnSalah1')) 
+const  LearnSalah2  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnSalah2')) 
+const  LearnSalah3  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/All/LearnSalah3')) 
+
 
 
 
@@ -713,9 +734,91 @@ function App() {
             </div>
             </React.Suspense>
             }/>
+         {/* Exam */}
+         <Route path='/Exam' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Exam/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Namima */}
+         <Route path='/Namima' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Namima/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
 
          {/* End التنشئةالسليمة */}
 
+         {/* AlSalah */}
+          {/* AlSalah */}
+          <Route path='/AlSalah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlSalah/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+          {/* Ablution */}
+          <Route path='/Ablution' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Ablution/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+          {/* LearnPray */}
+          <Route path='/LearnSalah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <LearnPray/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+          {/* LearnSalah1 */}
+          <Route path='/LearnSalah1' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <LearnSalah1/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+          {/* LearnSalah2 */}
+          <Route path='/LearnSalah2' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <LearnSalah2/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+          {/* LearnSalah3 */}
+          <Route path='/LearnSalah3' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <LearnSalah3/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* End Al */}
 
         {/* END Child */}
 
