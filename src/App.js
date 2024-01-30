@@ -142,7 +142,7 @@ function App() {
             <div>
               <Navbar/>
             <Mawaqeet/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -162,7 +162,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralsabah/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -172,7 +172,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralmsa/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -182,7 +182,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid1/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -192,7 +192,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid2/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -202,7 +202,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid3/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -212,7 +212,7 @@ function App() {
             <div>
               <Navbar/>
             <Athkarduaa/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -222,7 +222,7 @@ function App() {
             <div>
               <Navbar/>
             <Safar/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -232,7 +232,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralnawm/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -242,7 +242,7 @@ function App() {
             <div>
               <Navbar/>
             <Sleep/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -252,7 +252,7 @@ function App() {
             <div>
               <Navbar/>
             <Wakeup/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -262,7 +262,7 @@ function App() {
             <div>
               <Navbar/>
             <Istikhara/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -272,7 +272,7 @@ function App() {
             <div>
               <Navbar/>
             <Rain/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -282,7 +282,7 @@ function App() {
             <div>
               <Navbar/>
             <Newclothes/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -292,7 +292,7 @@ function App() {
             <div>
               <Navbar/>
             <Maqaber/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -302,7 +302,7 @@ function App() {
             <div>
               <Navbar/>
             <Mosiba/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -322,7 +322,7 @@ function App() {
             <div>
               <Navbar/>
             <Game/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>

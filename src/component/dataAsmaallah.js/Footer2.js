@@ -7,7 +7,7 @@ import style from '../css/Navbar.module.css'
 
 function Footer() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-left'>
+    <MDBFooter bgColor='light' className={`text-center text-lg-left ${style.footer2}` }>
         <MDBContainer className='p-4 pb-0'>
         <section className='mb-4 '>
             <div className={style.brand}>

@@ -71,9 +71,9 @@ function Mawaqeet() {
         </select>
         </div>
         </div>
-         <section className="py-4 container ">
+         <section className="py-1 container ">
         <div className="row justify-content-center">
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-12 g-3">
+                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-12 g-4">
                     <div className="col">
                     <div className="card">
                     <div className={style.card}>

@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .allselect select{
     width: 300px;
@@ -39,16 +40,23 @@
     color: #fff;
     border-radius: 10px;
     border: none;
+    margin-top: 100px;
+    padding: 10px;
+
 }
 .allselect option{
     background: #f1f1f1;
     color: #000;
 }
 @media(max-width:630px){
+    .allselect{
+     
+        margin-bottom: 0;
+    }
     .allselect select{
         width: 150px;
     }
 }
-@media (max-height: 745px){
+/* @media (max-height: 745px){
     
-}
+} */
