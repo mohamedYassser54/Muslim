@@ -5,6 +5,7 @@ import Loading from './component/Loading';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Footer2 from "./component/dataAsmaallah.js/Footer2"
+import Footer3 from "./component/footer/footer3"
 const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
 const Asmaallah = lazy(()=>import('./component/Asmaallah'))
@@ -162,7 +163,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralsabah/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>

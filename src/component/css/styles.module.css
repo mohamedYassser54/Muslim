@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom:50px ;
 }
 .mySwiper,
 .mySwiper2{
@@ -13,6 +14,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 8px #0A5984;
+  margin-top: 30px;
 }
 .image{
   width: 100%;
@@ -145,7 +147,17 @@
   .mySwiper{
     width: 90%;
   }
+  /* .mySwiper,
+  .mySwiper2{
+    margin-top: 100px;
+  } */
 }
+/* @media (max-height: 855px){
+  .mySwiper,
+.mySwiper2{
+  margin-top: 100px;
+}
+} */
 /* @media (max-height: 745px){
 
   .mySwiper,
@@ -184,7 +196,7 @@
 } */
 
 
-@media(max-height:1369px){
+/* @media(max-height:1369px){
   .mySwiper,
 .mySwiper2{
   width: 90%;
@@ -213,12 +225,12 @@
 .btn_class{
   width: 100px;
   height: 100px;
-  /* margin-top: 5px;
-  margin: 10px; */
+  margin-top: 5px;
+  margin: 10px;
 }
 
-}
-@media(max-height:721px){
+} */
+/* @media(max-height:721px){
   .mySwiper,
 .mySwiper2{
   width: 80%;
@@ -247,8 +259,8 @@
 .btn_class{
   width: 50px;
   height: 50px;
-  /* margin-top: 5px;
-  margin: 10px; */
+  margin-top: 5px;
+  margin: 10px;
 }
 
 }
@@ -286,23 +298,23 @@
 .btn_class{
   width: 45px;
   height: 45px;
-  /* margin-top: 5px;
-  margin: 10px; */
+  margin-top: 5px;
+  margin: 10px;
 }
 }
 @media(max-height:915px){
   .mySwiper,
   .mySwiper2{
     width: 85%;
-    height: 580px;
-    font-size: 20px;
+    height: 390px;
+    font-size: 15px;
   }
   .text h4{
-    font-size: 30px;
+    font-size: 20px;
     margin: 5px;
   }
   .text h5{
-    font-size: 20px;
+    font-size: 19px;
   }
   .text h6{
     font-size: 10px;
@@ -312,7 +324,7 @@
    
   }
   .text .font{
-    font-size:16px;
+    font-size:14px;
   }
   .text .font2{
     font-size:20px;
@@ -323,7 +335,7 @@
   .btn_class{
     width: 50px;
     height: 50px;
-    /* margin-top: 5px;
-    margin: 10px; */
+    margin-top: 5px;
+    margin: 10px;
   }
-}
+} */
