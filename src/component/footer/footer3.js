@@ -4,11 +4,11 @@ import {
   MDBContainer,
 } from 'mdb-react-ui-kit';
 import style from '../css/Navbar.module.css'
-
+import stylee from'../css/footer.module.css'
 function Footer() {
   return (
     <div style={{marginTop:"100px"}}>
-    <MDBFooter bgColor='light' className="text-center text-lg-left" style={{position:"absolute",bottom:"-120px", left:"0",right:"0", marginTop:"300px"}}>
+    <MDBFooter bgColor='light' className={`text-center text-lg-left ${stylee.footerr1}`}>
         <MDBContainer className='p-4 pb-0'>
         <section className='mb-4 '>
             <div className={style.brand}>

@@ -173,7 +173,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralmsa/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -183,7 +183,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid1/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -193,7 +193,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid2/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -203,7 +203,7 @@ function App() {
             <div>
               <Navbar/>
             <AthkarMasjid3/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -213,7 +213,7 @@ function App() {
             <div>
               <Navbar/>
             <Athkarduaa/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -223,7 +223,7 @@ function App() {
             <div>
               <Navbar/>
             <Safar/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -233,7 +233,7 @@ function App() {
             <div>
               <Navbar/>
             <Alathkaralnawm/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -243,7 +243,7 @@ function App() {
             <div>
               <Navbar/>
             <Sleep/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -253,7 +253,7 @@ function App() {
             <div>
               <Navbar/>
             <Wakeup/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -263,7 +263,7 @@ function App() {
             <div>
               <Navbar/>
             <Istikhara/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -273,7 +273,7 @@ function App() {
             <div>
               <Navbar/>
             <Rain/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -283,7 +283,7 @@ function App() {
             <div>
               <Navbar/>
             <Newclothes/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -293,7 +293,7 @@ function App() {
             <div>
               <Navbar/>
             <Maqaber/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -303,7 +303,7 @@ function App() {
             <div>
               <Navbar/>
             <Mosiba/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -323,7 +323,7 @@ function App() {
             <div>
               <Navbar/>
             <Game/>
-            <Footer2/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -338,7 +338,7 @@ function App() {
             <div>
             <Navbar/>
             <Child/>
-            <Footer/>
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -700,7 +700,7 @@ function App() {
             <div>
             <Navbar/>
             <AllVideo/>
-            <Footer/>
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>
@@ -775,7 +775,7 @@ function App() {
             <div>
             <Navbar/>
             <AlSalah/>
-            <Footer/>
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>
@@ -838,7 +838,7 @@ function App() {
             <div>
             <Navbar/>
             <Songs/>
-            <Footer/>
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>

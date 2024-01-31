@@ -1,0 +1,13 @@
+.footerr1{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    
+}
+
+@media(max-width:601px){
+    .footerr1{
+        bottom:-100px;
+    }
+}
