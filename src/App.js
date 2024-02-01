@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Loading from './component/Loading';
 import Navbar from './component/Navbar';
-import Navbar2 from './component/Navbar2/Navbar2';
 import Footer from './component/Footer';
 import Footer2 from "./component/dataAsmaallah.js/Footer2"
 import Footer3 from "./component/footer/footer3"
@@ -348,9 +347,9 @@ function App() {
         <Route path='/Child' element={
           <React.Suspense fallback={<Loading/>}>
             <div>
-            <Navbar2/>
+            <Navbar/>
             <Child/>
-            {/* <Footer3/> */}
+            <Footer3/>
             </div>
             </React.Suspense>
         }/>
@@ -359,9 +358,9 @@ function App() {
         <Route path='/Stories' element={
           <React.Suspense fallback={<Loading/>}>
             <div>
-            <Navbar2/>
+            <Navbar/>
             <Stories/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
         }/>
@@ -369,9 +368,9 @@ function App() {
         <Route path='/AlInsanFeAlQuran' element={
           <React.Suspense fallback={<Loading/>}>
             <div>
-            <Navbar2/>
+            <Navbar/>
             <AlInsanFeAlQuran/>
-            {/* <Footer2/> */}
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -379,9 +378,9 @@ function App() {
         <Route path='/One' element={
           <React.Suspense fallback={<Loading/>}>
             <div>
-            <Navbar2/>
+            <Navbar/>
             <One/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
         }/>
@@ -688,7 +687,7 @@ function App() {
             <div>
             <Navbar/>
             <AlSiraAlNabawiya/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
         }/>
@@ -699,7 +698,7 @@ function App() {
           <React.Suspense fallback={<Loading/>}>
             <div>
             <Navbar/>
-            {/* <YunusAlihAlsalam/> */}
+            <YunusAlihAlsalam/>
             <Footer/>
             </div>
             </React.Suspense>
@@ -712,7 +711,7 @@ function App() {
             <div>
             <Navbar/>
             <AllVideo/>
-            {/* <Footer3/> */}
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>
@@ -723,7 +722,7 @@ function App() {
             <div>
             <Navbar/>
             <Teknologia/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
             }/>
@@ -787,7 +786,7 @@ function App() {
             <div>
             <Navbar/>
             <AlSalah/>
-            {/* <Footer3/> */}
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>
@@ -797,7 +796,7 @@ function App() {
             <div>
             <Navbar/>
             <Ablution/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
             }/>
@@ -850,7 +849,7 @@ function App() {
             <div>
             <Navbar/>
             <Songs/>
-            {/* <Footer3/> */}
+            <Footer3/>
             </div>
             </React.Suspense>
             }/>
@@ -861,7 +860,7 @@ function App() {
             <div>
             <Navbar/>
             <Nasheed1/>
-            {/* <Footer/> */}
+            <Footer/>
             </div>
             </React.Suspense>
             }/>

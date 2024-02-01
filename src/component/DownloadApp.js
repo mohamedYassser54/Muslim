@@ -2,6 +2,7 @@ import React from 'react'
 import img4 from './image/4.png'
 import img5 from './image/7.png'
 import app from "./Muslim.apk"
+import app2 from "./.DS_Store"
 import style from './css/download.module.css'
 function DownloadApp() {
   return (
@@ -15,7 +16,7 @@ function DownloadApp() {
         </div>
       </div>
       </a>
-      <a href="#">
+      <a href={app2} download>
       <div className={style.image}>
         <img src={img5} alt="" />
         <div className={style.text}>

@@ -2,13 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import data from './dataStories';
 import style from '../../css/alathkar.module.css'
-import stylee from './css/Stories.module.css'
+
 
 function Stories () {
   return (
-    <div className={stylee.Stories}>
+    <div className="">
        <section className="py-4 container ">
-        <div className={`row justify-content-center ${stylee.marg}`}>
+        <div className={`row justify-content-center`}>
             {data && data.map((item)=>(
       <div className="col-4 col-md-3 col-lg-2 mx-2 mb-2" key={item.id}>
          <div className="col">

@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import img from './Child/image/4.png'
 import img2 from './Child/image/2.png'
 import img3 from './Child/image/3.png'
+import img4 from './Child/image/18.png'
 
 import './Child/style.css';
 
@@ -49,6 +50,12 @@ function Child() {
         <NavLink  to="/Nasheed" className="NavLink">
           <img src={img3} />
           <h1 className='textslide'>أناشيد</h1>
+          </NavLink>
+        </SwiperSlide>
+        <SwiperSlide>
+        <NavLink  to="/Nasheed" className="NavLink">
+          <img src={img4} />
+          <h1 className='textslide'>جزء عم</h1>
           </NavLink>
         </SwiperSlide>
        
