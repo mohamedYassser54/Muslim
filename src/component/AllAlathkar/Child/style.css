@@ -44,7 +44,7 @@ body {
 @media(max-width:601px){
   
   .NavLink{
-    color: #fff;
+    color: #000;
   }
   .swiper{
     /* margin-top: 150px; */
