@@ -6,7 +6,7 @@ function AlInsanFeAlQuran() {
   return (
     <div className={style.Number}>
     <section className="py-4 container ">
-     <div className="row justify-content-center">
+     <div className={`row justify-content-center  ${style.marg}`}>
          {data && data.map((item)=>(
    <div className="col-4 col-md-3 col-lg-2 mx-1 mb-4" key={item.id}>
       <div className="col">

@@ -5,14 +5,13 @@ body {
   height: 100%;
 } */
 
-/* body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
+body {
+  background-clip: border-box;
+  width: 100%;
+  height: 100vh;
    margin: 0;
   padding: 0; 
-} */
+}
 /* .AllSwiper{
 
 } */
@@ -43,14 +42,26 @@ body {
 }
 
 @media(max-width:601px){
+  .AllSwiper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/14.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .NavLink{
+    color: #fff;
+  }
   .swiper{
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 200px;
     height: 200px;
+    margin-top: 150px
   }
 }
 @media (max-height: 745px){
