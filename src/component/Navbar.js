@@ -153,6 +153,9 @@ function NavBar() {
       else if(downloadApp.includes(name)){
         navigate("/downloadApp");
       }
+      else{
+        navigate("*")
+      }
     }
   return (
     <>

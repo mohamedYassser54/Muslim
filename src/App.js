@@ -100,7 +100,8 @@ const  Nasheed6  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/
 const  Nasheed7  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed7')) 
 const  Nasheed8  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed8')) 
 
-
+// not Found
+const NotFound =lazy(()=>import('./component/NotFound'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 function App() {
@@ -126,6 +127,16 @@ function App() {
             </React.Suspense>
         }/>
 
+        {/* NotFound */}
+        <Route path='*' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+              <Navbar/>
+              <NotFound/>
+              <Footer/>
+            </div>
+          </React.Suspense>
+        }/>
 
         {/* asmaallah */}
      <Route path='/asmaallah' element={
