@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+importScripts("https://progressier.app/9m0CHJSW8WcE2xaj0Y5U/sw.js" );
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
