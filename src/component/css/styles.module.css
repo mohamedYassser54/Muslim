@@ -9,7 +9,7 @@
 .mySwiper2{
   /* width:350px; */
   width:350px;
-  height: 490px;
+  height: 495px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -151,17 +151,21 @@
   .mySwiper{
     width: 90%;
   }
+  
   /* .mySwiper,
   .mySwiper2{
     margin-top: 50px;
   } */
 }
-/* @media(max-width:415px)and (max-height:897px){
-  .mySwiper,
+ @media(max-width:281px){
   .mySwiper2{
-    margin-top: 115px;
+    width: 90%;
+  }
+  .text p{
+   font-size: 13px;
   }
 }
+/*
 @media(max-width:431px)and (max-height:933px){
   .mySwiper,
   .mySwiper2{

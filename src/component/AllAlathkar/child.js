@@ -53,7 +53,7 @@ function Child() {
           </NavLink>
         </SwiperSlide>
         <SwiperSlide>
-        <NavLink  to="/Nasheed" className="NavLink">
+        <NavLink  to="/QuranForKids" className="NavLink">
           <img src={img4} />
           <h1 className='textslide'>جزء عم</h1>
           </NavLink>

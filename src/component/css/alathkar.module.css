@@ -1,6 +1,10 @@
-/* .Alathkar{
-    margin-top: 150px;
-} */
+.Alathkar{
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
 .cards{
     width: 100px;
     transition: 0.3s;
@@ -20,4 +24,38 @@
 .cards h6{
     font-size: 15px;
     margin-top:5px;
+}
+@media(max-width:769px){
+    .Alathkar3{
+        width: 100%;
+    }
+    .Alathkar{
+        height: 130vh;
+    }
+    .cards img{
+        width: 90px;
+        height: 80px;
+        
+    }
+    .Alathkar3 img{
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+    .Alathkar3 img:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width:281px){
+    .Alathkar3{
+        width: 250px;
+    }
+    .Alathkar3 img{
+        width: 50px;
+        height: 50px;
+    }
+    .Alathkar3 h6{
+        font-size: 12px;
+    }
 }

@@ -16,14 +16,6 @@ function DownloadApp() {
         </div>
       </div>
       </a>
-      <a href="{app2}" download>
-      <div className={style.image}>
-        <img src={img5} alt="" />
-        <div className={style.text}>
-          <h5>Download the App Now!</h5>
-        </div>
-      </div>
-      </a>
     </div>
     </div>
   )

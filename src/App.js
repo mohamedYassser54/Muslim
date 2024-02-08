@@ -100,6 +100,51 @@ const  Nasheed6  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/
 const  Nasheed7  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed7')) 
 const  Nasheed8  = lazy(()=>import('./component/AllAlathkar/Child/SongsKids/All/Nasheed8')) 
 
+// QuranForKids
+const  QuranForKids  = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/QuranForKids')) 
+const  AlFatiha = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlFatiha')) 
+const  AlIkhlas = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlIkhlas')) 
+const  AlFalaq = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlFalaq')) 
+const  AlNas = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlNas')) 
+const  AlKafiroun = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlKafiroun')) 
+const  AlKawthar = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlKawthar')) 
+const  AlMasad = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlMasad')) 
+const  AlNasr = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlNasr')) 
+const  Mutafifin = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Mutafifin')) 
+const  Abas= lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Abas')) 
+const  AlInshiqaq = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlInshiqaq')) 
+const  AlInfitar = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlInfitar')) 
+const  AlNaba = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlNaba')) 
+const  AlTakwir = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlTakwir')) 
+const  Nazi3at = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Nazi3at')) 
+
+
+const  AlAsr = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlAsr')) 
+const  AlBalad = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlBalad')) 
+const  AlBayyinah = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlBayyinah')) 
+const  Alfi = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Alfil')) 
+const   AlBorouj= lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlBorouj')) 
+const  AlAalaa = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlAalaa')) 
+const  AlAlaq = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlAlaq')) 
+const  Adiyat = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Adiyat')) 
+const  AlDhuha = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlDhuha'))
+const  AlFajr = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlFajr')) 
+const  Alfil = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Alfil')) 
+const  AlGhashiyah = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlGhashiyah')) 
+const  AlHumazah = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlHumazah')) 
+const   AlLail= lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlLail')) 
+const  AlQadr = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlQadr')) 
+const  AlQariah = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlQariah')) 
+const  AlShams = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlShams')) 
+const  Alsharh = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Alsharh')) 
+const  AlTakathor = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlTakathor')) 
+const  AlTariq = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlTariq')) 
+const  AlTin = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlTin')) 
+const  AlZalzalah = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlZalzalah')) 
+const  Quraysh = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/Quraysh')) 
+const  AlMa3oun = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/quran/AlMa3oun')) 
+
+
 // not Found
 const NotFound =lazy(()=>import('./component/NotFound'))
 
@@ -324,7 +369,7 @@ function App() {
             <div>
               <Navbar/>
             <Message/>
-            <Footer/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -334,7 +379,7 @@ function App() {
             <div>
               <Navbar/>
             <Game/>
-            <Footer3/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -349,7 +394,7 @@ function App() {
             <div>
             <Navbar/>
             <Child/>
-            <Footer3/>
+            <Footer2/>
             </div>
             </React.Suspense>
         }/>
@@ -786,7 +831,7 @@ function App() {
             <div>
             <Navbar/>
             <AlSalah/>
-            <Footer3/>
+            <Footer2/>
             </div>
             </React.Suspense>
             }/>
@@ -849,7 +894,7 @@ function App() {
             <div>
             <Navbar/>
             <Songs/>
-            <Footer3/>
+            <Footer2/>
             </div>
             </React.Suspense>
             }/>
@@ -937,6 +982,419 @@ function App() {
 
 
         {/*End Nasheed */}
+
+        {/* QuranForKids.js */}
+        <Route path='/QuranForKids' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <QuranForKids/>
+            <Footer2/>
+            </div>
+            </React.Suspense>
+            }/>
+
+            {/* al-fatiha */}
+        <Route path='/AlFatihah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlFatiha/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlIkhlas */}
+        <Route path='/AlIkhlas' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlIkhlas/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlFalaq */}
+        <Route path='/AlFalaq' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlFalaq/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlNas */}
+        <Route path='/AlNas' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlNas/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlKafiroun */}
+        <Route path='/AlKafiroun' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlKafiroun/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlKawthar */}
+        <Route path='/AlKawthar' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlKawthar/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlMasad */}
+        <Route path='/AlMasad' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlMasad/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlNasr */}
+        <Route path='/AlNasr' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlNasr/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Mutafifin */}
+        <Route path='/Mutafifin' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Mutafifin/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Abas */}
+        <Route path='/Abas' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Abas/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlInshiqaq */}
+        <Route path='/AlInshiqaq' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlInshiqaq/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlInfitar */}
+        <Route path='/AlInfitar' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlInfitar/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlNaba */}
+        <Route path='/AlNaba' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlNaba/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlTakwir */}
+        <Route path='/AlTakwir' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlTakwir/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Nazi3at */}
+        <Route path='/Nazi3at' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Nazi3at/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+
+            {/* AlAsr */}
+        <Route path='/AlAsr' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlAsr/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlBalad */}
+        <Route path='/AlBalad' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlBalad/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlBayyinah */}
+        <Route path='/AlBayyinah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlBayyinah/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Alfi */}
+        <Route path='/Alfi' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Alfi/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlBorouj */}
+        <Route path='/AlBorouj' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlBorouj/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+       
+            {/* AlAalaa */}
+        <Route path='/AlAalaa' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlAalaa/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlAlaq */}
+        <Route path='/AlAlaq' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlAlaq/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Adiyat */}
+        <Route path='/Adiyat' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Adiyat/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlDhuha */}
+        <Route path='/AlDhuha' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlDhuha/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlFajr */}
+        <Route path='/AlFajr' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlFajr/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* Alfil */}
+        <Route path='/Alfil' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Alfil/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlGhashiyah */}
+        <Route path='/AlGhashiyah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlGhashiyah/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlHumazah */}
+        <Route path='/AlHumazah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlHumazah/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlLail */}
+        <Route path='/AlLail' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlLail/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlQadr */}
+        <Route path='/AlQadr' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlQadr/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+            {/* AlQariah */}
+        <Route path='/AlQariah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <AlQariah/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>  
+             {/* AlShams */}
+            <Route path='/AlShams' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlShams/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                }/>
+                 {/* Alsharh */}
+            <Route path='/Alsharh' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <Alsharh/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                   {/* AlTakathor */}
+            <Route path='/AlTakathor' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlTakathor/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                {/* AlTariq */}
+            <Route path='/AlTariq' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlTariq/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                {/* AlTin */}
+            <Route path='/AlTin' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlTin/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                {/* AlZalzalah */}
+            <Route path='/AlZalzalah' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlZalzalah/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                {/* Quraysh */}
+            <Route path='/Quraysh' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <Quraysh/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+                {/* AlMa3oun */}
+            <Route path='/AlMa3oun' element={
+              <React.Suspense fallback={<Loading/>}>
+                <div>
+                <Navbar/>
+                <AlMa3oun/>
+                <Footer/>
+                </div>
+                </React.Suspense>
+                
+                }/>
+       
+            {/* end QuranForKids.js */}
 
 
         {/* END Child */}

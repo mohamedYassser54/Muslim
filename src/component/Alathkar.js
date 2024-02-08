@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import style from './css/alathkar.module.css'
 function Alathkar() {
   return (
-    <div className={style.Alathkar}>
+    <div className={style.Alathkar2}>
         <section className="py-4 container ">
          <div className="row justify-content-center">
             {data.map((item)=>(

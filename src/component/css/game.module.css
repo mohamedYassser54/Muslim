@@ -4,8 +4,8 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    /* height: 100%; */
-    /* margin-top: 100px; */
+    height: 100vh;
+  
 }
 .Game img{
     width: 200px;
@@ -59,9 +59,6 @@
     font-size: 20px;
 }
 @media(max-width:601px){
-    /* .Game{
-        margin-top: 130px;
-    } */
     .Game img{
         width: 120px;
     }
@@ -71,32 +68,7 @@
     .Allcard button{
         margin: 13px;
     }
+    .Game .card{
+        height: 390px;
+    }
 }
-/* @media (max-height: 684px) {
-    .Allcard{
-        margin-top: 30px;
-       
-    }
-    .Game img{
-        width: 100px;
-    }
-    .Allcard p{
-        font-size:15px;
-    }
-    .Game .card {
-        width: 80%;
-        height: 170px;
-    }
-    .Allcard button{
-       padding: 5px;
-      font-size: 14px;
-      margin: 15px;
-
-    }
-    .end h1{
-        font-size: 20px;
-    }
-    .end p{
-        font-size: 15px;
-    }
-} */

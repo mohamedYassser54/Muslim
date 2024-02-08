@@ -19,16 +19,25 @@
 }
 .img2{
     width: 100%;
+    height: 100vh;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
     /* margin-bottom: 100px; */
     background: linear-gradient(to left, #4A94C2,#235E83);
     color: #fff;
 
 }
+.img3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .img2 img{
     width: 300px;
+    height: 60%;
     /* background: #fff; */
 }
 .text{
@@ -42,7 +51,7 @@
 }
 @media(max-width:735px){
     .Home{
-        height: 60vh;
+        height: 90vh;
         display: block;
     }
     .Home h1{
@@ -51,16 +60,18 @@
     .img img{
         width:300px;
     }
-    .img2{
-        /* margin-bottom: 100px; */
-    }
-    .img2 img{
+   
+    .img2 img,
+    .img3 img{
         width:160px;
+        height: 40%;
     }
-    .img2 h1{
+    .img2 h1,
+    .img3 h1{
         font-size: 20px;
     }
-    .img2 h4{
+    .img2 h4,
+    .img3 h4{
         font-size: 14px;
     }
     .text span{
@@ -68,5 +79,13 @@
        position: relative;
        bottom: 3px;
        border-radius: 50%;
+    }
+}
+@media(max-width:281px){
+    .Home h1{
+        font-size:50px ;
+    }
+    .img img{
+        width:250px;
     }
 }
