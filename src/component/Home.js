@@ -5,7 +5,7 @@ import img3 from './image/15.png'
 import Aos from 'aos'
 import  "aos/dist/aos.css" 
 import style from './css/Home.module.css'
-import './css/home.css'
+
 function Home() {
   useEffect(()=>{
     Aos.init({duration:2000})
