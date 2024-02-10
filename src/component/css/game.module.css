@@ -61,14 +61,26 @@
 @media(max-width:601px){
     .Game img{
         width: 120px;
+        margin-left: 35px;
     }
     .Allcard p{
         font-size:20px;
     }
     .Allcard button{
-        margin: 13px;
+        margin: 8px;
+        font-size: 13px;
     }
     .Game .card{
-        height: 390px;
+        height: 400px;
     }
+}
+@media(max-width:281px){
+    .Allcard p{
+        font-size:15px;
+    }
+    .Allcard button{
+        margin: 8px;
+        font-size: 11px;
+    }
+    
 }
