@@ -4,6 +4,10 @@ import img3 from './image/3.png'
 import img4 from './image/4.png'
 import img5 from './image/5.png'
 import img6 from './image/6.png'
+import img7 from './image/7.png'
+import img8 from './image/8.png'
+import img9 from './image/9.png'
+import img10 from './image/10.png'
 
 
 const  data =[
@@ -42,6 +46,30 @@ const  data =[
         image:img6,
         title:"النميمة",
         to:"/Namima"
+    },
+    {
+        id:7,
+        image:img7,
+        title:"أنا أعرف",
+        to:"/Iknow"
+    },
+    {
+        id:8,
+        image:img8,
+        title:"من غشنا فليس منا",
+        to:"/Cheatinginexamination"
+    },
+    {
+        id:9,
+        image:img9,
+        title:"زيارة المريض",
+        to:"/PatientVisit"
+    },
+    {
+        id:10,
+        image:img10,
+        title:" يجب عليك ان تنظر الي النعم ولا تحسد الاخرين",
+        to:"/alhamdulillah"
     },
    
 ]

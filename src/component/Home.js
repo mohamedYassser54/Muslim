@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import img from './image/10.jpg'
 import img2 from './image/14.png'
 import img3 from './image/15.png'
+import img4 from './image/16.png'
+import img5 from './image/17.png'
 import Aos from 'aos'
 import  "aos/dist/aos.css" 
 import style from './css/Home.module.css'
@@ -36,6 +38,19 @@ function Home() {
         <h4 data-aos="fade-left"> <span>.</span>Omnia Gaber</h4>
         </div>
         <img src={img3} alt="" data-aos="fade-left"/>
+        
+      </div>
+      <div className={style.img4} data-aos="fade-bottom">
+    <div className={style.text}>
+        <h1 data-aos="fade-right">طريقه التنزيل iphone  :</h1>
+        <h4 data-aos="fade-right"> <span>.</span>اضغط علي add to home screen </h4>
+        <h4 data-aos="fade-up"> <span>.</span>اختار طريقة التحميل </h4>
+        <h4 data-aos="fade-bottom"> <span>.</span>ثم add</h4>
+        </div>
+        <div className={style.images}>
+        <img src={img4} className={style.imageiphone} alt="" data-aos="fade-left"/>
+        <img src={img5} alt="" data-aos="fade-left"/>
+        </div>
         
       </div>
     </div>

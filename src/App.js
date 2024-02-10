@@ -79,7 +79,11 @@ const  Alkhayer  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Tekn
 const  Esthlak  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Esthlak')) 
 const  Family  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Family')) 
 const  Exam  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Exam')) 
+const  Cheatinginexamination  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Cheatinginexamination')) 
+const  Iknow  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Iknow')) 
+const  PatientVisit  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/PatientVisit')) 
 const  Namima  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/Namima')) 
+const  Alhamdulillah  = lazy(()=>import('./component/AllAlathkar/Child/VideoKids/Teknologia/alhamdulillah')) 
 
 // AlSalah
 const  AlSalah  = lazy(()=>import('./component/AllAlathkar/Child/AlSalah/AlSalah')) 
@@ -756,7 +760,7 @@ function App() {
             <div>
             <Navbar/>
             <AllVideo/>
-            <Footer3/>
+            <Footer2/>
             </div>
             </React.Suspense>
             }/>
@@ -817,6 +821,46 @@ function App() {
             <div>
             <Navbar/>
             <Namima/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Cheatinginexamination */}
+         <Route path='/Cheatinginexamination' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Cheatinginexamination/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Iknow */}
+         <Route path='/Iknow' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Iknow/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* PatientVisit */}
+         <Route path='/PatientVisit' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <PatientVisit/>
+            <Footer/>
+            </div>
+            </React.Suspense>
+            }/>
+         {/* Alhamdulillah */}
+         <Route path='/alhamdulillah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <div>
+            <Navbar/>
+            <Alhamdulillah/>
             <Footer/>
             </div>
             </React.Suspense>
