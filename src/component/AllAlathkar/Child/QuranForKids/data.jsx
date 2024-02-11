@@ -94,6 +94,19 @@ const  data =[
         to:"/AlBorouj"
     },
     {
+        id:10,
+        image:img17,
+        title:"سورة الطارق",
+        to:"/AlTariq"
+    },
+    {
+        id:39,
+        image:img29,
+        title:"سورة الأعلى",
+        to:"/AlAalaa"
+    },
+    
+    {
         id:11,
         image:img18,
         title:"سورة الغاشية ",
@@ -258,19 +271,7 @@ const  data =[
         image:img4,
         title:"سورة الناس",
         to:"/AlNas"
-    },
-    {
-        id:10,
-        image:img17,
-        title:"سورة الطارق",
-        to:"/AlTariq"
-    },
-    {
-        id:39,
-        image:img29,
-        title:"سورة الأعلى",
-        to:"/AlAalaa"
-    },
+    }
     
    
     

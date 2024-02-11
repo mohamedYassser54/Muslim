@@ -875,7 +875,7 @@ function App() {
             <div>
             <Navbar/>
             <AlSalah/>
-            <Footer2/>
+            <Footer/>
             </div>
             </React.Suspense>
             }/>

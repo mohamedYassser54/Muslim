@@ -7,8 +7,8 @@ function Alathkar() {
     <div className={style.Alathkar2}>
         <section className="py-4 container ">
          <div className="row justify-content-center">
-            {data.map((item)=>(
-           <div className="col-4 col-md-3 col-lg-2 mx-2 mb-5" >
+            {data.map((item,index)=>(
+           <div key={index} className="col-4 col-md-3 col-lg-2 mx-2 mb-5" >
              <div className="col">
               <div className="">
                 <div className={style.cards}>

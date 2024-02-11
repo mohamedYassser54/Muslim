@@ -4,7 +4,7 @@ import data from './data'
 import style from '../../../css/alathkar.module.css'
 function AlSalah() {
   return (
-    <div className={style.Alathkar}>
+    <div >
  <section className="py-4 container ">
         <div className="row justify-content-center">
             {data && data.map((item)=>(

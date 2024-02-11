@@ -13,10 +13,6 @@ import audio6 from './audio/6.mp3'
 import audio7 from './audio/7.mp3'
 import audio8 from './audio/8.mp3'
 
-
-
-
-import SwiperCore, { Navigation } from 'swiper';
 import "swiper/css";
 import style from"../css/styles.module.css";
 
