@@ -23,6 +23,7 @@
     "swiper": "^11.0.5",
     "vite": "^5.1.1",
     "vite-plugin-pages-sitemap": "^1.6.1",
+    "vite-plugin-pwa": "^0.18.0",
     "vite-plugin-svgr": "^4.2.0",
     "web-vitals": "^2.1.4"
   },
