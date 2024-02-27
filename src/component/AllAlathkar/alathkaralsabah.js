@@ -21,6 +21,8 @@ import audio12 from './audio/12.mp3'
 import audio13 from './audio/13.mp3'
 import audio14 from './audio/14.mp3'
 
+
+import SwiperCore, { Navigation } from 'swiper';
 import "swiper/css";
 import style from"../css/styles.module.css";
 
@@ -618,6 +620,17 @@ function AlathkarAlsabah() {
           <span className={style.front}></span>
           </button>      
             </SwiperSlide> 
+
+
+
+        {/* <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide> */}
       </Swiper>
     </div>
   )

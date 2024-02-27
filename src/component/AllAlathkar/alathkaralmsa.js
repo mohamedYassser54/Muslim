@@ -22,6 +22,7 @@ import audio13 from './audio/13.mp3'
 import audio14 from './audio/14.mp3'
 
 
+import SwiperCore, { Navigation } from 'swiper';
 import "swiper/css";
 import style from"../css/styles.module.css";
 
