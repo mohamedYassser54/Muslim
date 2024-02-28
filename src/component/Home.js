@@ -44,7 +44,6 @@ function Home() {
     <div className={style.text}>
         <h1 data-aos="fade-right">طريقه التنزيل iphone  :</h1>
         <h4 data-aos="fade-right"> <span>.</span>اضغط علي add to home screen </h4>
-        <h4 data-aos="fade-up"> <span>.</span>اختار طريقة التحميل </h4>
         <h4 data-aos="fade-bottom"> <span>.</span>ثم add</h4>
         </div>
         <div className={style.images}>
