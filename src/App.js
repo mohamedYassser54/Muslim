@@ -1,4 +1,4 @@
-import React,{ lazy } from 'react';
+import React,{ lazy,useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Loading from './component/Loading';
@@ -6,6 +6,7 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Footer2 from "./component/dataAsmaallah.js/Footer2"
 import Footer3 from "./component/footer/footer3"
+
 const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
 const Asmaallah = lazy(()=>import('./component/Asmaallah'))
@@ -153,7 +154,25 @@ const  AlMa3oun = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/qu
 const NotFound =lazy(()=>import('./component/NotFound'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
+
+const  Toastify = lazy(()=>import('./component/toastify'))
 function App() {
+  useEffect(() => {
+    const notifyEvery10Seconds = () => {
+      if ('Notification' in window) {
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted') {
+            const notification = new Notification('صلي علي النبي');
+          }
+        });
+      }
+    };
+
+    const intervalId = setInterval(notifyEvery10Seconds, 30000);
+    
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <BrowserRouter>
     <div className="App">
@@ -163,6 +182,11 @@ function App() {
         <Route path='/' element={
           <React.Suspense fallback={<Loading/>}>
             <Btn/>
+            </React.Suspense>
+        }/>
+        <Route path='/Toastify' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Toastify/>
             </React.Suspense>
         }/>
         {/* Home */}
