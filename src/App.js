@@ -156,46 +156,51 @@ const NotFound =lazy(()=>import('./component/NotFound'))
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 
 const  Toastify = lazy(()=>import('./component/toastify'))
-function App() {
-  useEffect(() => {
-    const notifyEvery10Seconds = async () => {
-      if ('BackgroundFetchManager' in window) {
-        try {
-          const registration = await navigator.serviceWorker.ready;
-          const bgFetch = await registration.backgroundFetch.fetch('my-fetch', ['https://example.com/data.json']);
-          await bgFetch.matchAll();
-          const notification = new Notification('صلي علي النبي');
-        } catch (error) {
-          console.error('Background Fetch API error:', error);
-        }
+function App() {useEffect(() => {
+  const notifyEvery10Seconds = async () => {
+    if ('BackgroundFetchManager' in window) {
+      try {
+        const registration = await navigator.serviceWorker.ready;
+        const bgFetch = await registration.backgroundFetch.fetch('my-fetch', ['https://example.com/data.json']);
+        await bgFetch.matchAll();
+        const notification = new Notification('صلي علي النبي');
+      } catch (error) {
+        console.error('Background Fetch API error:', error);
       }
-    };
-  
-    const startBackgroundFetch = async () => {
-      if ('BackgroundFetchManager' in window) {
-        try {
-          const registration = await navigator.serviceWorker.register('/service-worker.js');
+    }
+  };
+
+  const startBackgroundFetch = async () => {
+    if ('serviceWorker' in navigator && 'BackgroundFetchManager' in window) {
+      try {
+        // Register the service worker
+        const registration = await navigator.serviceWorker.register('/service-worker.js');
+        
+        // Check if background fetch is supported
+        if ('BackgroundFetchManager' in window) {
           await registration.backgroundFetch.abort('my-fetch');
           await registration.backgroundFetch.configure({
             icons: [{ sizes: '192x192', src: 'icon.png', type: 'image/png' }],
             title: 'صلي علي النبي',
           });
           const registrationId = await registration.backgroundFetch.fetch('my-fetch', ['https://example.com/data.json']);
-        } catch (error) {
-          console.error('Background Fetch API error:', error);
         }
+      } catch (error) {
+        console.error('Background Fetch API error:', error);
       }
-    };
-  
-    // Start the background fetch when the component mounts
-    startBackgroundFetch();
-  
-    // Set an interval to check for updates every 30 seconds
-    const intervalId = setInterval(notifyEvery10Seconds, 10000);
-  
-    // Cleanup: Clear the interval when the component is unmounted
-    return () => clearInterval(intervalId);
-  }, []);
+    }
+  };
+
+  // Start the background fetch when the component mounts
+  startBackgroundFetch();
+
+  // Set an interval to check for updates every 30 seconds
+  const intervalId = setInterval(notifyEvery10Seconds, 10000);
+
+  // Cleanup: Clear the interval when the component is unmounted
+  return () => clearInterval(intervalId);
+}, []);
+
   
 
   return (
