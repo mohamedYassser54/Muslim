@@ -158,20 +158,45 @@ const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 const  Toastify = lazy(()=>import('./component/toastify'))
 function App() {
   useEffect(() => {
-    const notifyEvery10Seconds = () => {
-      if ('Notification' in window) {
-        Notification.requestPermission().then(permission => {
-          if (permission === 'granted') {
-            const notification = new Notification('صلي علي النبي');
-          }
-        });
+    const notifyEvery10Seconds = async () => {
+      if ('BackgroundFetchManager' in window) {
+        try {
+          const registration = await navigator.serviceWorker.ready;
+          const bgFetch = await registration.backgroundFetch.fetch('my-fetch', ['https://example.com/data.json']);
+          await bgFetch.matchAll();
+          const notification = new Notification('صلي علي النبي');
+        } catch (error) {
+          console.error('Background Fetch API error:', error);
+        }
       }
     };
-
-    const intervalId = setInterval(notifyEvery10Seconds, 30000);
-    
+  
+    const startBackgroundFetch = async () => {
+      if ('BackgroundFetchManager' in window) {
+        try {
+          const registration = await navigator.serviceWorker.register('/service-worker.js');
+          await registration.backgroundFetch.abort('my-fetch');
+          await registration.backgroundFetch.configure({
+            icons: [{ sizes: '192x192', src: 'icon.png', type: 'image/png' }],
+            title: 'صلي علي النبي',
+          });
+          const registrationId = await registration.backgroundFetch.fetch('my-fetch', ['https://example.com/data.json']);
+        } catch (error) {
+          console.error('Background Fetch API error:', error);
+        }
+      }
+    };
+  
+    // Start the background fetch when the component mounts
+    startBackgroundFetch();
+  
+    // Set an interval to check for updates every 30 seconds
+    const intervalId = setInterval(notifyEvery10Seconds, 10000);
+  
+    // Cleanup: Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
   }, []);
+  
 
   return (
     <BrowserRouter>
