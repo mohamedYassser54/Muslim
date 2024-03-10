@@ -1,14 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import video from './video/1.mp4'
+// import video from './video/1.mp4'
+import ReactPlayer from 'react-player';
 import style from '../css/ramadan.module.css'
 import  '../css//btnram.css'
 function ramadan() {
   return (
     <div className={style.alldiv}>
-      <video className={style.video} autoPlay muted loop>
-        <source src={video}/>
-      </video>
+        <ReactPlayer
+        url={require('./video/1.mp4')}
+        className={style.video}
+        playing={true}
+        loop={true}
+        muted={true}
+        
+      />
       
       <div className="btnram">
       <NavLink to="/Days">
