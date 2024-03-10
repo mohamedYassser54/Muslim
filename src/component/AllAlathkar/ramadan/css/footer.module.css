@@ -1,0 +1,23 @@
+.footer2{
+    background-image: url(../image/4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* footer */
+.insta{
+    margin-right:3px ;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name{
+    color: #3f3b3b;
+
+    font-size:13px;
+    margin-top: 3px;
+}
+.brand,
+.nameee{
+    color: #fff;
+}

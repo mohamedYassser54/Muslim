@@ -1,0 +1,45 @@
+.allflexe{
+    width: 100%;
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.cardimg {
+    
+}
+.cardimg img{
+    width: 300px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+@media(max-width:601px){
+    .cardimg img{
+        width: 120px;
+        height: 110px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:281px){
+    .cardimg img{
+        width: 100px;
+        height: 90px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+}

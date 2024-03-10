@@ -6,6 +6,8 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Footer2 from "./component/dataAsmaallah.js/Footer2"
 import Footer3 from "./component/footer/footer3"
+import FooterRma2 from './component/AllAlathkar/ramadan/FooterRma2'
+import NavbarRam from './component/AllAlathkar/ramadan/navbarRam';
 
 const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
@@ -155,23 +157,26 @@ const NotFound =lazy(()=>import('./component/NotFound'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
 
-const  Toastify = lazy(()=>import('./component/toastify'))
+// ramadan
+const Ramadan = lazy(()=>import('./component/AllAlathkar/ramadan'))
+const Ramadan1 = lazy(()=>import('./component/AllAlathkar/ramadan/days/ramadan1'))
+const Days = lazy(()=>import('./component/AllAlathkar/ramadan/day'))
 function App() {
-  useEffect(() => {
-    const notifyEvery10Seconds = () => {
-      if ('Notification' in window) {
-        Notification.requestPermission().then(permission => {
-          if (permission === 'granted') {
-            const notification = new Notification('صلي علي النبي');
-          }
-        });
-      }
-    };
+  // useEffect(() => {
+  //   const notifyEvery10Seconds = () => {
+  //     if ('Notification' in window) {
+  //       Notification.requestPermission().then(permission => {
+  //         if (permission === 'granted') {
+  //           const notification = new Notification('صلي علي النبي');
+  //         }
+  //       });
+  //     }
+  //   };
 
-    const intervalId = setInterval(notifyEvery10Seconds, 30000);
+  //   const intervalId = setInterval(notifyEvery10Seconds, 30000);
     
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <BrowserRouter>
@@ -184,9 +189,26 @@ function App() {
             <Btn/>
             </React.Suspense>
         }/>
-        <Route path='/Toastify' element={
+        <Route path='/Ramadan' element={
           <React.Suspense fallback={<Loading/>}>
-            <Toastify/>
+            <NavbarRam/>
+            <Ramadan/>
+            {/* <FooterRma2/> */}
+            </React.Suspense>
+        }/>
+        {/* Days */}
+        <Route path='/Days' element={
+          <React.Suspense fallback={<Loading/>}>
+            <NavbarRam/>
+            <Days/>
+            {/* <FooterRma2/> */}
+            </React.Suspense>
+        }/>
+        <Route path='/Ramadan1' element={
+          <React.Suspense fallback={<Loading/>}>
+            <NavbarRam/>
+            <Ramadan1/>
+            {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
         {/* Home */}
