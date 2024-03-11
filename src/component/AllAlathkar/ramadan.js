@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from '../css/ramadan.module.css';
+import gif from './video/2.gif'
 import '../css/btnram.css';
 
 function Ramadan() {
   return (
     <div className={style.alldiv}>
-      <video className={style.video} autoPlay muted loop>
-        <source src="/video/1.mp4" type="video/mp4" />
-      </video>
+      <img className={style.video} src={gif}/>
+       
+      
       
       <div className="btnram">
         <NavLink to="/Days">
@@ -16,7 +17,7 @@ function Ramadan() {
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
-            <span className="button-text">المهام</span>
+            <span className="button-text">1المهام</span>
           </button>
         </NavLink>
       </div>
