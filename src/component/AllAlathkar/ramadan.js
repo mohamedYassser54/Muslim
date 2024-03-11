@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from '../css/ramadan.module.css';
+import '../css/btnram.css';
 
 function Ramadan() {
   return (
     <div className={style.alldiv}>
       <video className={style.video} autoPlay muted loop>
-        <source src={process.env.PUBLIC_URL + '/1.mp4'} type="video/mp4" />
+        <source src="/video/1.mp4" type="video/mp4" />
       </video>
       
       <div className="btnram">
