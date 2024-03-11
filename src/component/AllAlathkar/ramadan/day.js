@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import dataDay from "./dataDay"
 import { NavLink } from "react-router-dom";
+import img from './image/9.png'
 import Aos from 'aos'
 import  "aos/dist/aos.css" 
 import style from './css/day.module.css'
@@ -11,9 +12,8 @@ function Day() {
   },[])
   return (
     <div>
-      <video autoPlay muted className={style.vide} loop >
-        <source src={vide}/>
-      </video>
+      <img src={img} className={style.vide}  />
+       
       <section className="py-4 container ">
          <div className="row justify-content-center">
           {dataDay.map((item)=>(

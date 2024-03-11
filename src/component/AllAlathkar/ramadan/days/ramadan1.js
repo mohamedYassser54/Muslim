@@ -11,9 +11,8 @@ function Ramadan1() {
   },[])
   return (
     <div className='allflexe'>
-        <video autoPlay muted loop className='videox'>
-        <source src={video}/>
-      </video>
+        <img src='' className='videox'/>
+     
      <div className="allcards" data-aos="fade-left">
       <div className="cardimg">
         <img src={img} alt="" />

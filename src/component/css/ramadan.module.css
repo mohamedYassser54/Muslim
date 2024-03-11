@@ -1,9 +1,19 @@
 .alldiv{
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../AllAlathkar/ramadan/image/10.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
 }
 .div{
     width: 100px;
@@ -123,8 +133,11 @@ button {
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit:fill;
+        object-fit:cover;
         z-index: -1;
         margin-top: 20px;
+    }
+    .alldiv{
+        background-image: url(../AllAlathkar/ramadan/image/13.png);       
     }
 }
