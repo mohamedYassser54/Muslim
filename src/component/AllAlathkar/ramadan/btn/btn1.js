@@ -2,7 +2,7 @@ import React from 'react'
 import './btn.css'
 function btn1() {
   return (
-    <div>
+    <div className='allbtnn'>
      <button class="btn">
   <div class="wrapper">
     <p class="text">اليوم الاول </p>
