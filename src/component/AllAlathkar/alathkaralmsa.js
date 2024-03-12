@@ -52,6 +52,7 @@ function Aathkaralmsa() {
     number21:1, 
     number22:1,  //راجع
     number23:10, 
+    number24:100, 
   });
   const swiperRef = useRef(null);
   const click = (key) => {
@@ -84,7 +85,8 @@ function Aathkaralmsa() {
          (key === 'number20' && number.number20 === 1)||
          (key === 'number21' && number.number21 === 1)||
          (key === 'number22' && number.number22 === 1)||
-         (key === 'number23' && number.number23 === 1)
+         (key === 'number23' && number.number23 === 1)||
+         (key === 'number24' && number.number24 === 1)
          ) {
         swiperRef.current.slideNext();
       }
@@ -111,7 +113,8 @@ function Aathkaralmsa() {
       (key === "number20" && number.number20 === 0)||
       (key === "number21" && number.number21 === 0)||
       (key === "number22" && number.number22 === 0)||
-      (key === "number23" && number.number23 === 0)
+      (key === "number23" && number.number23 === 0)||
+      (key === "number24" && number.number24 === 0)
       ){
         setNumber((prevState) => ({
           ...prevState,
@@ -596,6 +599,28 @@ function Aathkaralmsa() {
           <span className={style.front}></span>
           </button>      
             </SwiperSlide> 
+            <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number24}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p>
+          سبحان الله وبحمده        
+           </p>
+         
+          <p>
+          لا اله الا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير      
+            </p>
+          <p>
+          استغفرالله العظيم واتوب اليه     
+        </p>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number24')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide>
       </Swiper>
     </div>
   )
