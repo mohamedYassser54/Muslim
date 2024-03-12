@@ -410,7 +410,7 @@ function Task2() {
       </div>
 
       <div className={style.allcard}>
-      <h1 className={style.athkar}>ثواب {totalClickscard}</h1>
+      <h1 className={style.athkar}>عبادات {totalClickscard}</h1>
       <div className={style.allcardbtn}>
         <div className={style.cardbtn} onClick={()=>handleTdClickcard(20)}>صدقة</div>
         <div className={style.cardbtn} onClick={()=>handleTdClickcard(21)}>بر الوالدين</div>

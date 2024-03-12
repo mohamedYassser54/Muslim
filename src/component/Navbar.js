@@ -157,45 +157,54 @@ function NavBar() {
         navigate("*")
       }
     }
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
+
+    const handleLinkClick = () => {
+      setIsMenuOpen(false); 
+    };
+  
+    const handleToggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen); 
+    };
   return (
     <>
-        <Navbar key={expand} expand={expand} className={`bg-body-tertiary mb-4 p-4 ${style.Navbar}`} style={{boxShadow:"0 0 8px #89b3e3"}}>
-          <Container fluid>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className={style.brand2} >
-                Muslim
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-              <Form className="d-flex" onSubmit={handleClick}>
+       <Navbar key={expand} expand={expand} className={`bg-body-tertiary mb-4 p-4 ${style.Navbar}`} style={{boxShadow:"0 0 8px #89b3e3"}}>
+      <Container fluid>
+        <Navbar.Toggle onClick={handleToggleMenu} aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <Navbar.Offcanvas
+          show={isMenuOpen} // استخدم الحالة المحلية لتحديد ما إذا كان يجب عرض القائمة أو إخفاؤها
+          id={`offcanvasNavbar-expand-${expand}`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+          placement="start"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className={style.brand2}>
+              Muslim
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Form className="d-flex" onSubmit={handleClick}>
               <Button variant="outline-primary" type='submit'>البحث</Button>
-                  <Form.Control
-                    type="search"
-                    placeholder="البحث"
-                    className="me-2"
-                    aria-label="Search"
-                    onChange={change}
-                  />
-                </Form>
-                <Nav className="justify-content-center flex-grow-1 pe-3 " >
-                  <NavLink to="/home" className={style.colornav}>الصفحة الرئيسية</NavLink>
-                  <NavLink to="/alathkar" className={style.colornav}>الأذكار</NavLink>
-                  <NavLink to="/asmaallah" className={style.colornav}>اسماء الله الحسنى</NavLink>
-                  <NavLink to="/Mawaqeet" className={style.colornav}>اوقات الصلاة</NavLink>
-                  <NavLink to="/downloadApp" className={style.colornav}>تحميل التطبيق</NavLink>
-                </Nav>
-               
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-            <NavLink to="/home" className={style.brand} >Muslim</NavLink>
-          </Container>
-        </Navbar>
+              <Form.Control
+                type="search"
+                placeholder="البحث"
+                className="me-2"
+                aria-label="Search"
+                onChange={change}
+              />
+            </Form>
+            <Nav className="justify-content-center flex-grow-1 pe-3 " >
+              <NavLink to="/home" onClick={handleLinkClick} className={style.colornav}>الصفحة الرئيسية</NavLink>
+              <NavLink to="/alathkar" onClick={handleLinkClick} className={style.colornav}>الأذكار</NavLink>
+              <NavLink to="/asmaallah" onClick={handleLinkClick} className={style.colornav}>اسماء الله الحسنى</NavLink>
+              <NavLink to="/Mawaqeet" onClick={handleLinkClick} className={style.colornav}>اوقات الصلاة</NavLink>
+              <NavLink to="/downloadApp" onClick={handleLinkClick} className={style.colornav}>تحميل التطبيق</NavLink>
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+        <NavLink to="/home" className={style.brand}>Muslim</NavLink>
+      </Container>
+    </Navbar>
       
     </>
   );
