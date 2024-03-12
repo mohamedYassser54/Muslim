@@ -113,32 +113,10 @@ function Aathkaralmsa() {
       (key === "number22" && number.number22 === 0)||
       (key === "number23" && number.number23 === 0)
       ){
-        setNumber((prevState)=>({
+        setNumber((prevState) => ({
           ...prevState,
-          number:0,
-          number2:0,
-          number3:0,
-          number4:0,
-          number5:0,
-          number6:0,
-          number7:0,
-          number8:0,
-          number9:0,
-          number10:0,
-          number11:0,
-          number12:0,
-          number13:0,
-          number14:0,
-          number15:0,
-          number16:0,
-          number17:0,
-          number18:0,
-          number19:0,
-          number20:0,
-          number21:0,
-          number22:0,
-          number23:0,
-        }))
+          [key]: 0,
+        }));
       }
      
     }

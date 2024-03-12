@@ -52,6 +52,7 @@ function AlathkarAlsabah() {
     number21:1, 
     number22:1,  //راجع
     number23:10, 
+    number24:100, 
   });
   const swiperRef = useRef(null);
   const click = (key) => {
@@ -84,7 +85,8 @@ function AlathkarAlsabah() {
          (key === 'number20' && number.number20 === 1)||
          (key === 'number21' && number.number21 === 1)||
          (key === 'number22' && number.number22 === 1)||
-         (key === 'number23' && number.number23 === 1)
+         (key === 'number23' && number.number23 === 1)||
+         (key === 'number24' && number.number24 === 1)
          ) {
         swiperRef.current.slideNext();
       }
@@ -111,34 +113,13 @@ function AlathkarAlsabah() {
       (key === "number20" && number.number20 === 0)||
       (key === "number21" && number.number21 === 0)||
       (key === "number22" && number.number22 === 0)||
-      (key === "number23" && number.number23 === 0)
+      (key === "number23" && number.number23 === 0)||
+      (key === "number24" && number.number24 === 0)
       ){
-        setNumber((prevState)=>({
+        setNumber((prevState) => ({
           ...prevState,
-          number:0,
-          number2:0,
-          number3:0,
-          number4:0,
-          number5:0,
-          number6:0,
-          number7:0,
-          number8:0,
-          number9:0,
-          number10:0,
-          number11:0,
-          number12:0,
-          number13:0,
-          number14:0,
-          number15:0,
-          number16:0,
-          number17:0,
-          number18:0,
-          number19:0,
-          number20:0,
-          number21:0,
-          number22:0,
-          number23:0,
-        }))
+          [key]: 0,
+        }));
       }
      
     }
@@ -620,7 +601,28 @@ function AlathkarAlsabah() {
           <span className={style.front}></span>
           </button>      
             </SwiperSlide> 
+            <SwiperSlide>
+        <div className={style.image}>
 
+         <h1><span>{number.number24}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p>
+          سبحان الله وبحمده        
+           </p>
+         
+          <p>
+          لا اله الا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير      
+            </p>
+          <p>
+          استغفرالله العظيم واتوب اليه     
+        </p>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number24')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide>
 
 
         {/* <SwiperSlide>Slide 2</SwiperSlide>

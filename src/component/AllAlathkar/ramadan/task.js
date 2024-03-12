@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import Btn1 from './btn/btn1';
 import  Alert1 from './alert/alert1';
+import  AlerRamadan from './alert/alerRamadan';
 import  Alert2 from './alert/alert2';
+import img from './image/left.png'
 import style from './css/task.module.css';
 
 function Task() {
@@ -50,6 +53,10 @@ function Task() {
     21: 0, 
     22: 0, 
     23: 0, 
+    25: 0, 
+    26: 0, 
+    27: 0, 
+    30: 0, 
   });
 
 
@@ -74,11 +81,16 @@ function Task() {
   const [tdColor13, setTdColor13] = useState(() => Cookies.get('tdColor13') || style.color);
   const [tdColor14, setTdColor14] = useState(() => Cookies.get('tdColor14') || style.color);
   const [tdColor15, setTdColor15] = useState(() => Cookies.get('tdColor15') || style.color);
+  // الصلاة
+  const [tdColor25, setTdColor25] = useState(() => Cookies.get('tdColor125') || style.color);
+  const [tdColor26, setTdColor26] = useState(() => Cookies.get('tdColor126') || style.color);
+  const [tdColor27, setTdColor27] = useState(() => Cookies.get('tdColor127') || style.color);
   // الاذكار
   const [tdColor16, setTdColor16] = useState(() => Cookies.get('tdColor16') || style.color);
   const [tdColor17, setTdColor17] = useState(() => Cookies.get('tdColor17') || style.color);
   const [tdColor18, setTdColor18] = useState(() => Cookies.get('tdColor18') || style.color);
   const [tdColor19, setTdColor19] = useState(() => Cookies.get('tdColor19') || style.color);
+  const [tdColor30, setTdColor30] = useState(() => Cookies.get('tdColor99') || style.color);
   // ثواب
   const [tdColor20, setTdColor20] = useState(() => Cookies.get('tdColor20') || style.color);
   const [tdColor21, setTdColor21] = useState(() => Cookies.get('tdColor21') || style.color);
@@ -109,11 +121,16 @@ function Task() {
       Cookies.set('tdColor13', tdColor13);
       Cookies.set('tdColor14', tdColor14);
       Cookies.set('tdColor15', tdColor15);
+        // الصلاة
+      Cookies.set('tdColor125', tdColor25);
+      Cookies.set('tdColor126', tdColor26);
+      Cookies.set('tdColor127', tdColor27);
         // الاذكار
       Cookies.set('tdColor16', tdColor16);
       Cookies.set('tdColor17', tdColor17);
       Cookies.set('tdColor18', tdColor18);
       Cookies.set('tdColor19', tdColor19);
+      Cookies.set('tdColor99', tdColor30);
         // ثواب
       Cookies.set('tdColor20', tdColor20);
       Cookies.set('tdColor21', tdColor21);
@@ -141,6 +158,7 @@ function Task() {
     tdColor21,
     tdColor22,
     tdColor23,
+    tdColor30,
      colorChanged]);
 
   useEffect(() => {
@@ -156,10 +174,10 @@ function Task() {
   }, [totalClickscard]);
 
   const handleTdClick = (tdNumber) => {
-    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 75) {
+    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 90) {
       setCount((prevCount) => prevCount + 1);
       setTdClicks((prevClicks) => ({ ...prevClicks, [tdNumber]: prevClicks[tdNumber] + 5 }));
-      setTotalClicks((prevTotal) => Math.min(prevTotal + 5, 75));
+      setTotalClicks((prevTotal) => Math.min(prevTotal + 5, 90));
   
       switch (tdNumber) {
         case 1:
@@ -210,6 +228,15 @@ function Task() {
         case 16:
           setTdColor16('#9a4bd2');
           break;
+          case 25:
+          setTdColor25('#9a4bd2');
+          break;
+        case 26:
+          setTdColor26('#9a4bd2');
+          break;
+        case 27:
+          setTdColor27('#9a4bd2');
+          break;
         default:
           break;
       }
@@ -223,7 +250,7 @@ function Task() {
     if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 115) {
       setCount((prevCount) => prevCount + 1);
       setTdClicks((prevClicks) => ({ ...prevClicks, [tdNumber]: prevClicks[tdNumber] + 5 }));
-      setTotalClicksathk((prevTotal) => Math.min(prevTotal + 5,20));
+      setTotalClicksathk((prevTotal) => Math.min(prevTotal + 5,25));
       switch (tdNumber) {
         case 16:
           setTdColor16('#9a4bd2');
@@ -237,6 +264,12 @@ function Task() {
         case 19:
           setTdColor19('#9a4bd2');
           break;
+        case 19:
+          setTdColor19('#9a4bd2');
+          break;
+          case 30:
+            setTdColor30('#9a4bd2');
+            break;
         default:
           break;
       }
@@ -272,9 +305,24 @@ function Task() {
   };
 
 
+  const back = ()=>{
+    window.history.back(-1);
+  }
+
   return (
     <div className={style.alltask}>
+      <div className={style.btnnav}>
+        <NavLink to="/Task2">
+      <button className={style.button}>
+        اليوم الثاني
+    <svg fill="currentColor" viewBox="0 0 24 24" className={style.icon}>
+    <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+     </svg>
+    </button>
+    </NavLink>
       <h1 className={style.h1btn}>{<Btn1/>}</h1>
+    <button className={style.button} onClick={back}><img src={img} alt="" className={style.icon}/></button>
+      </div>
       
       <div>
         <div className={style.alltable}>
@@ -321,6 +369,11 @@ function Task() {
                 <td style={{ backgroundColor: tdColor14 }} className={style.btn} onClick={() => handleTdClick(14)}></td>
                 <td style={{ backgroundColor: tdColor15 }} className={style.btn} onClick={() => handleTdClick(15)}></td>
               </tr>
+              <tr className={style.allfootertable}>
+                <td className={style.footertable} onClick={() => handleTdClick(25)}>الصلاة الضحي</td>
+                <td className={style.footertable} onClick={() => handleTdClick(26)}>صلاة الشروق</td>
+                <td className={style.footertable} onClick={() => handleTdClick(27)}>قيام الليل</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -332,12 +385,16 @@ function Task() {
           <table >
             <tbody className={style.allathkar}>
               <tr>
-                <td className={style.btncard}>اذكار الصباح</td>
+                <td className={style.btncard}><NavLink to="/alathkaralsabah">اذكار الصباح </NavLink></td>
                 <td style={{ backgroundColor: tdColor16 }} className={style.btn} onClick={() => handleTdClickath(16)}></td>
               </tr>
               <tr>
-                <td className={style.btncard}>أذكار المساء</td>
+                <td className={style.btncard}><NavLink to="/alathkaralmsa">أذكار المساء</NavLink></td>
                 <td style={{ backgroundColor: tdColor17 }} className={style.btn} onClick={() => handleTdClickath(17)}></td>
+              </tr>
+              <tr>
+                <td className={style.btncard}> <AlerRamadan/></td>
+                <td style={{ backgroundColor: tdColor30 }} className={style.btn} onClick={() => handleTdClickath(30)}></td>
               </tr>
               <tr>
                 <td className={style.btncard}> <Alert1/></td>
