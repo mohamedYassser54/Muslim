@@ -125,6 +125,22 @@ function Task() {
     tdColor4,
     tdColor5,
     tdColor6,
+    tdColor8,
+    tdColor9,
+    tdColor10,
+    tdColor11,
+    tdColor12,
+    tdColor13,
+    tdColor14,
+    tdColor15,
+    tdColor16,
+    tdColor17,
+    tdColor18,
+    tdColor19,
+    tdColor20,
+    tdColor21,
+    tdColor22,
+    tdColor23,
      colorChanged]);
 
   useEffect(() => {
@@ -194,15 +210,6 @@ function Task() {
         case 16:
           setTdColor16('#9a4bd2');
           break;
-        case 17:
-          setTdColor17('#9a4bd2');
-          break;
-        case 18:
-          setTdColor18('#9a4bd2');
-          break;
-        case 19:
-          setTdColor19('#9a4bd2');
-          break;
         default:
           break;
       }
@@ -213,7 +220,7 @@ function Task() {
 
   
   const handleTdClickath = (tdNumber) => {
-    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 20) {
+    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 115) {
       setCount((prevCount) => prevCount + 1);
       setTdClicks((prevClicks) => ({ ...prevClicks, [tdNumber]: prevClicks[tdNumber] + 5 }));
       setTotalClicksathk((prevTotal) => Math.min(prevTotal + 5,20));
@@ -239,7 +246,7 @@ function Task() {
   };
   
   const handleTdClickcard = (tdNumber) => {
-    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 20) {
+    if (!colorChanged && tdClicks[tdNumber] < 5 && totalClicks < 115) {
       setCount((prevCount) => prevCount + 1);
       setTdClicks((prevClicks) => ({ ...prevClicks, [tdNumber]: prevClicks[tdNumber] + 5 }));
       setTotalClickscard((prevTotal) => Math.min(prevTotal + 5,20));
