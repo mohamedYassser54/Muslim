@@ -163,7 +163,7 @@ function AlathkarAlsabah() {
       >
 
         {/* 1 */}
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className={style.image}>
            <img src={img1} alt="" onClick={() => toggleAudio(1)} key={1} />
            <h1><span>{number.number}</span> </h1>
@@ -190,10 +190,10 @@ function AlathkarAlsabah() {
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         {/* 2 */}
-        <SwiperSlide>
+        {/* <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(4)}  key={4}/>
            <h1><span>{number.number2}</span> </h1>
@@ -212,7 +212,7 @@ function AlathkarAlsabah() {
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         {/* 3 */}
         <SwiperSlide>
@@ -327,18 +327,10 @@ function AlathkarAlsabah() {
          <h1><span>{number.number8}</span> </h1>
          </div>
         <div className={style.text}>
-        <h4>بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</h4>
-          <p>
-          رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ       
+          <p className={style.mar}>
+          أصبحنا وأصبح الملك لله والحمد لله، لا إله إلا الله وحده لا شريك له، له الملكُ وله الحمدُ وهو على كل شيء ٍ قدير، ربِّ أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شرِّ ما في هذا اليوم وشرِّ ما بعده، ربِّ أعوذُ بك من الكسل وسُوء الكِـبَـر، ربِّ أعوذ بك من عذابٍ في النارِ وعذابٍ في القبر.
+(رواه مسلم)     
              </p>
-          <h6>[الممتحنة:٤]</h6>
-          <p>
-          رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَيْرُ الْفَاتِحِينَ             
-          </p>
-          <h6>[ الأعراف: 89]</h6>
-          <p>
-          رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ          </p>
-          <h6>[آل عمران الاية ٨]</h6>
           </div>
           <button className={style.btn_class} onClick={() => click('number8')}>
           <span className={style.back}></span>
