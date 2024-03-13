@@ -164,6 +164,7 @@ const Days = lazy(()=>import('./component/AllAlathkar/ramadan/day'))
 const Task = lazy(()=>import('./component/AllAlathkar/ramadan/task'))
 const Task2 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task2'))
 const Task3 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task3'))
+const Task4 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task4'))
 function App() {
   // useEffect(() => {
   //   const notifyEvery10Seconds = () => {
@@ -226,6 +227,13 @@ function App() {
           <React.Suspense fallback={<Loading/>}>
             {/* <NavbarRam/> */}
             <Task3/>
+            {/* <FooterRma2/> */}
+            </React.Suspense>
+        }/>
+        <Route path='/Task4' element={
+          <React.Suspense fallback={<Loading/>}>
+            {/* <NavbarRam/> */}
+            <Task4/>
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
