@@ -9,6 +9,9 @@ import Footer3 from "./component/footer/footer3"
 import FooterRma2 from './component/AllAlathkar/ramadan/FooterRma2'
 import NavbarRam from './component/AllAlathkar/ramadan/navbarRam';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
 const Asmaallah = lazy(()=>import('./component/Asmaallah'))
@@ -156,6 +159,7 @@ const  AlMa3oun = lazy(()=>import('./component/AllAlathkar/Child/QuranForKids/qu
 const NotFound =lazy(()=>import('./component/NotFound'))
 
 const  DownloadApp = lazy(()=>import('./component/DownloadApp'))
+const  Toastify = lazy(()=>import('./component/toastify'))
 
 // ramadan
 const Ramadan = lazy(()=>import('./component/AllAlathkar/ramadan'))
@@ -166,6 +170,18 @@ const Task2 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task2'))
 const Task3 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task3'))
 const Task4 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task4'))
 function App() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      toast("صلي على محمد");
+      setTimeout(() => {
+        toast("اللهم حرر فلسطين، والمسجد الأقصى من كيد المعتدين، وكن يا الله عوناً لإخواننا في فلسطين");
+      }, 10000); // 10 seconds delay after the first toast
+    }, 10 * 60 * 1000); 
+
+    // Clean up interval
+    return () => clearInterval(interval);
+  }, []);
+
   // useEffect(() => {
   //   const notifyEvery10Seconds = () => {
   //     if ('Notification' in window) {
@@ -185,6 +201,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
+    <ToastContainer />
       <Routes>
         
         {/* btn */}
@@ -193,6 +210,12 @@ function App() {
             <Btn/>
             </React.Suspense>
         }/>
+        {/* <Route path='/Toastify' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <Toastify/>
+            </React.Suspense>
+        }/> */}
         {/* Ramadan */}
         <Route path='/Ramadan' element={
           <React.Suspense fallback={<Loading/>}>

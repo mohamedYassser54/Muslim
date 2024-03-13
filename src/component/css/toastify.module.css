@@ -1,0 +1,17 @@
+.alltoastify{
+    width: 100%;
+    margin-top: 60px;
+}
+.toastify{
+    width: 90%;
+    height: 100px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    background: #6E4EBA;
+    background: linear-gradient(135deg, #6E4EBA, #9A47BC);
+    margin-bottom: 20px;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+
+}
