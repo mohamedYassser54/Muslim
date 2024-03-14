@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "arabic-normalization": "^0.1.0",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "gsap": "^3.12.5",
     "howler": "^2.2.4",

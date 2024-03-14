@@ -3,8 +3,8 @@ import Cookies from 'js-cookie';
 import { NavLink } from 'react-router-dom';
 import  AlerRamadan from '../alert/alerRamadan';
 import Btn1 from '../btn/btn5';
-import  Alert1 from '../alert/alert8';
-import  Alert2 from '../alert/alert7';
+import  Alert1 from '../alert/alert10';
+import  Alert2 from '../alert/alert9';
 import img from '../image/left.png'
 import style from '../css/task.module.css';
 

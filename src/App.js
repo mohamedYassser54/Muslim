@@ -8,7 +8,7 @@ import Footer2 from "./component/dataAsmaallah.js/Footer2"
 import Footer3 from "./component/footer/footer3"
 import FooterRma2 from './component/AllAlathkar/ramadan/FooterRma2'
 import NavbarRam from './component/AllAlathkar/ramadan/navbarRam';
-
+import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
