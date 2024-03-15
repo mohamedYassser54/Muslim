@@ -81,6 +81,7 @@ function NavBar() {
       setFilter(e.target.value);
     }
     const handleClick =(e) =>{
+      setIsMenuOpen(false);
       e.preventDefault();
       const name = filter;
       // alathkar
@@ -194,8 +195,8 @@ function NavBar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-          <div className="d-flex" >
-              <Button variant="outline-primary" type='submit' onClick={(e) => handleClick(e, filter)}>البحث</Button>
+          <Form className="d-flex" onSubmit={(e) => handleClick(e, filter)&&handleLinkClick}>
+          <Button variant="outline-primary" type='submit' >البحث</Button>
               <Stack spacing={1} sx={{ width: 300}}>
               <Autocomplete
   freeSolo
@@ -249,7 +250,7 @@ function NavBar() {
 
 
               </Stack>
-            </div>
+            </Form>
             <Nav className="justify-content-center flex-grow-1 pe-3 " >
               <NavLink to="/home" onClick={handleLinkClick} className={style.colornav}>الصفحة الرئيسية</NavLink>
               <NavLink to="/alathkar" onClick={handleLinkClick} className={style.colornav}>الأذكار</NavLink>
