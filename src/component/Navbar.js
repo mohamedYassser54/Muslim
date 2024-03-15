@@ -9,63 +9,70 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink,useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from './css/Navbar.module.css'
-
+import dataNa from './dataNavbar/dataNa'
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 // Search
 
 // alathkar
 // alathkaralsabah
-const alathkaralsabah = ["أذكار الصباح", "اذكار الصباح", "اذكارالصباح", "أذكارالصباح"];
+const alathkaralsabah = ["أذكار الصباح"];
 // alathkaralmsa
-const alathkaralmsa=["أذكار المساء", "اذكار المساء", "اذكارالمساء", "أذكارالمساء"];
+const alathkaralmsa=["أذكار المساء"];
 // athkarMasjid1
-const athkarMasjid1=["دعاء الذهاب إلى المسجد", "دعاء الذهاب الى المسجد", "دعاءالذهاب الى المسجد" ];
+const athkarMasjid1=["دعاء الذهاب إلى المسجد"];
 // athkarMasjid2
-const athkarMasjid2=["دعاء دخول المسجد", "دعاءدخول المسجد"];
+const athkarMasjid2=["دعاء دخول المسجد"];
 // athkarMasjid3
-const athkarMasjid3=["دعاء الخروج من المسجد", "دعاءالخروج من المسجد"];
+const athkarMasjid3=["دعاء الخروج من المسجد"];
 // alathkaralnawm
-const alathkaralnawm=["أذكار النوم", "اذكار النوم", "اذكارالنوم", "أذكارالنوم"];
+const alathkaralnawm=["أذكار النوم"];
 // Sleep
-const Sleep=["دعاء الفزع عند النوم", "الفزع", "دعاء الفزع"];
+const Sleep=["دعاء الفزع عند النوم"];
 // Wakeup
-const Wakeup=["أذكار الإستيقاظ من النوم", "أذكارالإستيقاظ من النوم", "أذكار الاستيقاظ من النوم", "اذكار الإستيقاظ من النوم","اذكار الاستيقاظ من النوم"];
+const Wakeup=["أذكار الإستيقاظ من النوم"];
 // safar
-const safar=["دعاء السفر","دعاءالسفر"];
+const safar=["دعاء السفر"];
 // istikhara
-const istikhara=["دعاء صلاة الاستخارة","دعاءصلاة الاستخارة","دعاء صلاه الاستخاره"];
+const istikhara=["دعاء صلاة الاستخارة"];
 // rain
-const rain=["الدعاء إذا رأى المطر","الدعاء اذا راى المطر"];
+const rain=["الدعاء إذا رأى المطر"];
 // newclothes
-const newclothes=["دعاء لبس الثوب الجديد","دعاءلبس الثوب الجديد"];
+const newclothes=["دعاء لبس الثوب الجديد"];
 // maqaber
-const maqaber=["دعاء زيارة القبور","دعاءزيارة القبور"];
+const maqaber=["دعاء زيارة القبور"];
 // mosiba
-const mosiba=["دعاء من أصيب بمصيبة","دعاءمن أصيب بمصيبة","دعاء من اصيب بمصيبة","دعاء من أصيب بمصيبه"];
+const mosiba=["دعاء من أصيب بمصيبة"];
 // message
-const message=["رسالة لك","رسالة","رساله لك","رساله"];
+const message=["رسالة لك"];
 // game
-const game=["مسابقة","مسابقه","لعبه","لعبة"];
+const game=["مسابقة"];
 // Child
-const Child=["أطفال","اطفال"];
+const Child=["أطفال"];
 // Stories
-const Stories=["حكايات","مسلسلات"];
+const Stories=["حكايات"];
 // AlSalah
-const AlSalah=["صلاة","صلاه","تعلم الصلاة","تعلم الصلاه"];
+const AlSalah=["صلاة"];
 // Nasheed
-const Nasheed=["أناشيد","اناشيد"];
+const Nasheed=["أناشيد"];
 
 // end alathkar
 
 // home
-const home =["الصفحة الرئيسية","الصفحه الرئيسيه"]
+const home =["الصفحة الرئيسية"]
 // alathkar
-const alathkar =["الأذكار","الاذكار","اذكار","أذكار"]
+const alathkar =["الأذكار"]
 // asmaallah
-const asmaallah =["اسماء الله الحسنى","اسماء الله","اسماء الله الحسني"]
+const asmaallah =["اسماء الله الحسنى"]
 // Mawaqeet
-const Mawaqeet =["اوقات الصلاة","اوقات الصلاه","مواعيد الصلاه","مواعيد الصلاة","مواقيت الصلاه","مواقيت الصلاة"]
+const Mawaqeet =["اوقات الصلاة"]
 // downloadApp
-const downloadApp =["تحميل التطبيق","تنزيل التطبيق","التطبيق","البرنامج","تحميل البرنامج","تنزيل البرنامج"]
+const downloadApp =["تحميل التطبيق"]
+
+// Ramadan
+const Ramadan = ["رمضان"]
+
 function NavBar() {
    const [filter,setFilter] = useState('');
     const expand = "lg";
@@ -79,6 +86,9 @@ function NavBar() {
       // alathkar
       if(alathkaralsabah.includes(name)){
         navigate("/alathkaralsabah")
+      }
+      else if(Ramadan.includes(name)){
+        navigate("/Ramadan")
       }
       else if(alathkaralmsa.includes(name)){
         navigate("/alathkaralmsa");
@@ -157,6 +167,7 @@ function NavBar() {
         navigate("*")
       }
     }
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     const handleLinkClick = () => {
@@ -172,27 +183,73 @@ function NavBar() {
       <Container fluid>
         <Navbar.Toggle onClick={handleToggleMenu} aria-controls={`offcanvasNavbar-expand-${expand}`} />
         <Navbar.Offcanvas
-          show={isMenuOpen} // استخدم الحالة المحلية لتحديد ما إذا كان يجب عرض القائمة أو إخفاؤها
+          show={isMenuOpen}
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="start"
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header >
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className={style.brand2}>
               Muslim
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Form className="d-flex" onSubmit={handleClick}>
-              <Button variant="outline-primary" type='submit'>البحث</Button>
-              <Form.Control
-                type="search"
-                placeholder="البحث"
-                className="me-2"
-                aria-label="Search"
-                onChange={change}
-              />
-            </Form>
+          <div className="d-flex" >
+              <Button variant="outline-primary" type='submit' onClick={(e) => handleClick(e, filter)}>البحث</Button>
+              <Stack spacing={1} sx={{ width: 300}}>
+              <Autocomplete
+  freeSolo
+  id="free-solo-2-demo"
+  disableClearable
+  options={[
+    ...alathkaralsabah,
+    ...alathkaralmsa,
+    ...athkarMasjid1,
+    ...athkarMasjid2,
+    ...athkarMasjid3,
+    ...alathkaralnawm,
+    ...Sleep,
+    ...Wakeup,
+    ...safar,
+    ...istikhara,
+    ...rain,
+    ...newclothes,
+    ...maqaber,
+    ...mosiba,
+    ...message,
+    ...game,
+    ...Child,
+    ...Stories,
+    ...AlSalah,
+    ...Nasheed,
+    ...home,
+    ...alathkar,
+    ...asmaallah,
+    ...Mawaqeet,
+    ...downloadApp,
+    ...Ramadan,
+  ]}
+  renderInput={(params) => (
+    <TextField
+      {...params}
+      label="البحث"
+      InputProps={{
+        ...params.InputProps,
+        type: 'search',
+      }}
+      onChange={change}
+    />
+  )}
+  onChange={(event, value) => {
+    if (value) {
+      setFilter(value);
+    }
+  }}
+/>
+
+
+              </Stack>
+            </div>
             <Nav className="justify-content-center flex-grow-1 pe-3 " >
               <NavLink to="/home" onClick={handleLinkClick} className={style.colornav}>الصفحة الرئيسية</NavLink>
               <NavLink to="/alathkar" onClick={handleLinkClick} className={style.colornav}>الأذكار</NavLink>

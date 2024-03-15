@@ -25,7 +25,6 @@ function Home() {
     <div className={style.text}>
         <h1 data-aos="fade-right">طريقه التنزيل التطبيق :</h1>
         <h4 data-aos="fade-right"> <span>.</span>اضغط علي تحميل التطبيق </h4>
-        <h4 data-aos="fade-up"> <span>.</span>اختار طريقة التحميل </h4>
         <h4 data-aos="fade-bottom"> <span>.</span>عند التنزيل التطبيق اختار install anyway</h4>
         </div>
         <img src={img2} alt="" data-aos="fade-left"/>

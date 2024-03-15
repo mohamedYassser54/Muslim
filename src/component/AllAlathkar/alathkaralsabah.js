@@ -236,7 +236,7 @@ function AlathkarAlsabah() {
           </button>
         </SwiperSlide>
         {/* 4 */}
-        <SwiperSlide>
+        {/* <SwiperSlide>
         <div className={style.image}>
           <img src={img1} alt="" onClick={()=>toggleAudio(7)}  key={7}/>
            <h1><span>{number.number4}</span> </h1>
@@ -256,7 +256,7 @@ function AlathkarAlsabah() {
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/* 5 */}
         <SwiperSlide>
         <div className={style.image}>

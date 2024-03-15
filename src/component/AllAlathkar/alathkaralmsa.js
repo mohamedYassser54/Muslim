@@ -55,6 +55,8 @@ function Aathkaralmsa() {
     number24:100, 
     number25:100, 
     number26:100, 
+    number27:1, 
+    number28:1, 
   });
   const swiperRef = useRef(null);
   const click = (key) => {
@@ -90,7 +92,9 @@ function Aathkaralmsa() {
          (key === 'number23' && number.number23 === 1)||
          (key === 'number24' && number.number24 === 1)||
          (key === 'number25' && number.number25 === 1)||
-         (key === 'number26' && number.number26 === 1)
+         (key === 'number26' && number.number26 === 1)||
+         (key === 'number27' && number.number27 === 1)||
+         (key === 'number28' && number.number28 === 1)
          ) {
         swiperRef.current.slideNext();
       }
@@ -120,7 +124,9 @@ function Aathkaralmsa() {
       (key === "number23" && number.number23 === 0)||
       (key === "number24" && number.number24 === 0)||
       (key === "number25" && number.number25 === 0)||
-      (key === "number26" && number.number26 === 0)
+      (key === "number26" && number.number26 === 0)||
+      (key === "number27" && number.number27 === 0)||
+      (key === "number28" && number.number28 === 0)
       ){
         setNumber((prevState) => ({
           ...prevState,
@@ -314,6 +320,23 @@ function Aathkaralmsa() {
           <h6>[ الناس:١-٦ ]</h6>
           </div>
           <button className={style.btn_class} onClick={() => click('number7')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide>
+            {/* add 27 */}
+         <SwiperSlide>
+        <div className={style.image}>
+           <h1><span>{number.number27}</span> </h1>
+          </div>
+        <div className={style.text}>
+        
+          <p className={style.font2}>
+          أَمْسَيْنَا وأمسى الْمُلْكُ لِلَّهِ ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هذه الليلة وَخَيرَ مَا بَعْدَها ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هذه الليلة وَشَرِّ مَا بَعْدَها، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْر          
+    
+          </p>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number27')}>
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>      
@@ -522,6 +545,21 @@ function Aathkaralmsa() {
           حَسْبِـيَ اللّهُ لا إلهَ إلاّ هُوَ عَلَـيهِ تَوَكَّـلتُ وَهُوَ رَبُّ العَرْشِ العَظـيم.
             </p>
           <span>من قالها كفاه الله ما أهمه من أمر الدنيا والأخرة.</span>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number19')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide> 
+         {/* add 28 */}
+         <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number19}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p className={style.mar}>
+          اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَينِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي            </p>
           </div>
           <button className={style.btn_class} onClick={() => click('number19')}>
           <span className={style.back}></span>
