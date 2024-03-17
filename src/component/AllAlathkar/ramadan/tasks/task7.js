@@ -311,7 +311,7 @@ function Task3() {
   return (
     <div className={style.alltask}>
       <div className={style.btnnav}>
-        <NavLink to="#">
+        <NavLink to="/Task8">
       <button className={style.button}>
         اليوم الثامن
     <svg fill="currentColor" viewBox="0 0 24 24" className={style.icon}>

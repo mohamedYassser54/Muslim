@@ -163,6 +163,7 @@ const  Toastify = lazy(()=>import('./component/toastify'))
 
 // ramadan
 const Ramadan = lazy(()=>import('./component/AllAlathkar/ramadan'))
+const Quran = lazy(()=>import('./component/AllAlathkar/quran'))
 const Ramadan1 = lazy(()=>import('./component/AllAlathkar/ramadan/days/ramadan1'))
 const Days = lazy(()=>import('./component/AllAlathkar/ramadan/day'))
 const Task = lazy(()=>import('./component/AllAlathkar/ramadan/task'))
@@ -172,6 +173,7 @@ const Task4 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task4'))
 const Task5 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task5'))
 const Task6  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task6'))
 const Task7  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task7'))
+const Task8  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task8'))
 function App() {
   useEffect(() => {
     const interval = setInterval(() => {
@@ -227,6 +229,11 @@ function App() {
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
+        {/* <Route path='/quran' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Quran/>
+            </React.Suspense>
+        }/> */}
         {/* Days */}
         <Route path='/Days' element={
           <React.Suspense fallback={<Loading/>}>
@@ -281,6 +288,13 @@ function App() {
           <React.Suspense fallback={<Loading/>}>
             {/* <NavbarRam/> */}
             <Task7/>
+            {/* <FooterRma2/> */}
+            </React.Suspense>
+        }/>
+        <Route path='/Task8' element={
+          <React.Suspense fallback={<Loading/>}>
+            {/* <NavbarRam/> */}
+            <Task8/>
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
