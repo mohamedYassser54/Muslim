@@ -40,6 +40,11 @@ const dataDay = [
         number:"اليوم الثامن",
         navlink:"/Task8"
     },
+    {
+        id:8,
+        number:"اليوم التاسع",
+        navlink:"/Task9"
+    },
     
 ]
 

@@ -174,6 +174,7 @@ const Task5 = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task5'))
 const Task6  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task6'))
 const Task7  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task7'))
 const Task8  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task8'))
+const Task9  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task9'))
 function App() {
   useEffect(() => {
     const interval = setInterval(() => {
@@ -295,6 +296,13 @@ function App() {
           <React.Suspense fallback={<Loading/>}>
             {/* <NavbarRam/> */}
             <Task8/>
+            {/* <FooterRma2/> */}
+            </React.Suspense>
+        }/>
+        <Route path='/Task9' element={
+          <React.Suspense fallback={<Loading/>}>
+            {/* <NavbarRam/> */}
+            <Task9/>
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
