@@ -57,6 +57,11 @@ function Aathkaralmsa() {
     number26:100, 
     number27:1, 
     number28:1, 
+    number29:1, 
+    number30:1, 
+    number31:3, 
+    number32:3, 
+    number33:3, 
   });
   const swiperRef = useRef(null);
   const click = (key) => {
@@ -94,7 +99,12 @@ function Aathkaralmsa() {
          (key === 'number25' && number.number25 === 1)||
          (key === 'number26' && number.number26 === 1)||
          (key === 'number27' && number.number27 === 1)||
-         (key === 'number28' && number.number28 === 1)
+         (key === 'number28' && number.number28 === 1)||
+         (key === 'number29' && number.number29 === 1)||
+         (key === 'number30' && number.number30 === 1)||
+         (key === 'number31' && number.number31 === 1)||
+         (key === 'number32' && number.number32 === 1)||
+         (key === 'number33' && number.number33 === 1)
          ) {
         swiperRef.current.slideNext();
       }
@@ -126,7 +136,12 @@ function Aathkaralmsa() {
       (key === "number25" && number.number25 === 0)||
       (key === "number26" && number.number26 === 0)||
       (key === "number27" && number.number27 === 0)||
-      (key === "number28" && number.number28 === 0)
+      (key === "number28" && number.number28 === 0)||
+      (key === "number29" && number.number29 === 0)||
+      (key === "number30" && number.number30 === 0)||
+      (key === "number31" && number.number31 === 0)||
+      (key === "number32" && number.number32 === 0)||
+      (key === "number33" && number.number33 === 0)
       ){
         setNumber((prevState) => ({
           ...prevState,
@@ -462,7 +477,7 @@ function Aathkaralmsa() {
           </button>      
             </SwiperSlide>
          {/* 15 */}
-         <SwiperSlide>
+         {/* <SwiperSlide>
         <div className={style.image}>
 
          <h1><span>{number.number15}</span> </h1>
@@ -476,7 +491,7 @@ function Aathkaralmsa() {
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>      
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             {/*  */}
             
@@ -492,6 +507,21 @@ function Aathkaralmsa() {
            </p>
           </div>
           <button className={style.btn_class} onClick={() => click('number16')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide> 
+         {/* 24 */}
+         <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number30}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p className={style.mar}>
+          َمْسَيْنَا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ           </p>
+          </div>
+          <button className={style.btn_class} onClick={() => click('number30')}>
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>      
@@ -555,13 +585,13 @@ function Aathkaralmsa() {
          <SwiperSlide>
         <div className={style.image}>
 
-         <h1><span>{number.number19}</span> </h1>
+         <h1><span>{number.number29}</span> </h1>
          </div>
         <div className={style.text}>
           <p className={style.mar}>
           اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَينِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي            </p>
           </div>
-          <button className={style.btn_class} onClick={() => click('number19')}>
+          <button className={style.btn_class} onClick={() => click('number29')}>
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>      
@@ -631,6 +661,55 @@ function Aathkaralmsa() {
            
           </div>
           <button className={style.btn_class} onClick={() => click('number23')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide> 
+         {/* 31*/}
+         <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number31}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p className={style.mar}>
+          يارَبِّ لك الحمدُ كما يَنْبَغِي لجلالِ وجهِك ولِعَظِيمِ سُلْطَانِكَ
+            </p>
+           
+          </div>
+          <button className={style.btn_class} onClick={() => click('number31')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide> 
+         {/* 32*/}
+         <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number32}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p className={style.mar}>
+          اللَّهُمَّ إنَّا نَعوذُ بك مِن أنْ نُشرِكَ بك شيئًا نَعلَمُه، ونَستغفِرُكَ لما لا نَعلَمُه            </p>
+           
+          </div>
+          <button className={style.btn_class} onClick={() => click('number32')}>
+          <span className={style.back}></span>
+          <span className={style.front}></span>
+          </button>      
+            </SwiperSlide> 
+         {/* 33*/}
+         <SwiperSlide>
+        <div className={style.image}>
+
+         <h1><span>{number.number33}</span> </h1>
+         </div>
+        <div className={style.text}>
+          <p className={style.mar}>
+          ستغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه            </p>
+           
+          </div>
+          <button className={style.btn_class} onClick={() => click('number33')}>
           <span className={style.back}></span>
           <span className={style.front}></span>
           </button>      
