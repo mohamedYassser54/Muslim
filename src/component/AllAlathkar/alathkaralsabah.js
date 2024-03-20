@@ -680,7 +680,7 @@ function AlathkarAlsabah() {
          </div>
         <div className={style.text}>
           <p className={style.mar}>
-          ستغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه            </p>
+          أستغفر  الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه            </p>
            
           </div>
           <button className={style.btn_class} onClick={() => click('number33')}>
