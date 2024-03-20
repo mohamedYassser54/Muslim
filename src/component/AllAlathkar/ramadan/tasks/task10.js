@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import { NavLink } from 'react-router-dom';
 import  AlerRamadan from '../alert/alerRamadan';
-import Btn1 from '../btn/btn9';
+import Btn1 from '../btn/btn10';
 import  Alert1 from '../alert/alert14';
 import  Alert2 from '../alert/alert15';
 import img from '../image/left.png'
@@ -15,17 +15,17 @@ function Task3() {
   });
 
   const [totalClicks, setTotalClicks] = useState(() => {
-    const storedTotalClicks = Cookies.get('totalClicks9');
+    const storedTotalClicks = Cookies.get('totalClicks10');
     return storedTotalClicks ? parseInt(storedTotalClicks, 10) : 0;
   });
 
   const [totalClicksathk, setTotalClicksathk] = useState(() => {
-    const storedTotalClicks = Cookies.get('totalClicksathk9');
+    const storedTotalClicks = Cookies.get('totalClicksathk10');
     return storedTotalClicks ? parseInt(storedTotalClicks, 10) : 0;
   });
 
   const [totalClickscard, setTotalClickscard] = useState(() => {
-    const storedTotalClicks = Cookies.get('totalClickscard9');
+    const storedTotalClicks = Cookies.get('totalClickscard10');
     return storedTotalClicks ? parseInt(storedTotalClicks, 10) : 0;
   });
   const [tdClicks, setTdClicks] = useState({
@@ -60,36 +60,36 @@ function Task3() {
 
 
   // الفجر
-  const [tdColor1, setTdColor1] = useState(() => Cookies.get('tdColor3147') || style.color);
-  const [tdColor2, setTdColor2] = useState(() => Cookies.get('tdColor3148') || style.color);
-  const [tdColor3, setTdColor3] = useState(() => Cookies.get('tdColor3170') || style.color);
+  const [tdColor1, setTdColor1] = useState(() => Cookies.get('tdColor4147') || style.color);
+  const [tdColor2, setTdColor2] = useState(() => Cookies.get('tdColor4148') || style.color);
+  const [tdColor3, setTdColor3] = useState(() => Cookies.get('tdColor4170') || style.color);
 
   // الظهر
-  const [tdColor4, setTdColor4] = useState(() => Cookies.get('tdColor3149') || style.color);
-  const [tdColor5, setTdColor5] = useState(() => Cookies.get('tdColor3151') || style.color);
-  const [tdColor6, setTdColor6] = useState(() => Cookies.get('tdColor3152') || style.color);
+  const [tdColor4, setTdColor4] = useState(() => Cookies.get('tdColor4149') || style.color);
+  const [tdColor5, setTdColor5] = useState(() => Cookies.get('tdColor4151') || style.color);
+  const [tdColor6, setTdColor6] = useState(() => Cookies.get('tdColor4152') || style.color);
   // العصر
-  const [tdColor7, setTdColor7] = useState(() => Cookies.get('tdColor3153') || style.color);
-  const [tdColor8, setTdColor8] = useState(() => Cookies.get('tdColor3154') || style.color);
-  const [tdColor9, setTdColor9] = useState(() => Cookies.get('tdColor3155') || style.color);
+  const [tdColor7, setTdColor7] = useState(() => Cookies.get('tdColor4153') || style.color);
+  const [tdColor8, setTdColor8] = useState(() => Cookies.get('tdColor4154') || style.color);
+  const [tdColor9, setTdColor9] = useState(() => Cookies.get('tdColor4155') || style.color);
   // المغرب
-  const [tdColor10, setTdColor10] = useState(() => Cookies.get('tdColor3156') || style.color);
-  const [tdColor11, setTdColor11] = useState(() => Cookies.get('tdColor3157') || style.color);
-  const [tdColor12, setTdColor12] = useState(() => Cookies.get('tdColor3158') || style.color);
+  const [tdColor10, setTdColor10] = useState(() => Cookies.get('tdColor4156') || style.color);
+  const [tdColor11, setTdColor11] = useState(() => Cookies.get('tdColor4157') || style.color);
+  const [tdColor12, setTdColor12] = useState(() => Cookies.get('tdColor4158') || style.color);
   // العشاء
-  const [tdColor13, setTdColor13] = useState(() => Cookies.get('tdColor3159') || style.color);
-  const [tdColor14, setTdColor14] = useState(() => Cookies.get('tdColor3160') || style.color);
-  const [tdColor15, setTdColor15] = useState(() => Cookies.get('tdColor3161') || style.color);
+  const [tdColor13, setTdColor13] = useState(() => Cookies.get('tdColor4159') || style.color);
+  const [tdColor14, setTdColor14] = useState(() => Cookies.get('tdColor4160') || style.color);
+  const [tdColor15, setTdColor15] = useState(() => Cookies.get('tdColor4161') || style.color);
   // الصلاة
-  const [tdColor25, setTdColor25] = useState(() => Cookies.get('tdColor31325') || style.color);
-  const [tdColor26, setTdColor26] = useState(() => Cookies.get('tdColor31326') || style.color);
-  const [tdColor27, setTdColor27] = useState(() => Cookies.get('tdColor31327') || style.color);
+  const [tdColor25, setTdColor25] = useState(() => Cookies.get('tdColor41325') || style.color);
+  const [tdColor26, setTdColor26] = useState(() => Cookies.get('tdColor41326') || style.color);
+  const [tdColor27, setTdColor27] = useState(() => Cookies.get('tdColor41327') || style.color);
   // الاذكار
-  const [tdColor16, setTdColor16] = useState(() => Cookies.get('tdColor3162') || style.color);
-  const [tdColor17, setTdColor17] = useState(() => Cookies.get('tdColor3163') || style.color);
-  const [tdColor18, setTdColor18] = useState(() => Cookies.get('tdColor3164') || style.color);
-  const [tdColor19, setTdColor19] = useState(() => Cookies.get('tdColor3165') || style.color);
-  const [tdColor30, setTdColor30] = useState(() => Cookies.get('tdColor31399') || style.color);
+  const [tdColor16, setTdColor16] = useState(() => Cookies.get('tdColor4162') || style.color);
+  const [tdColor17, setTdColor17] = useState(() => Cookies.get('tdColor4163') || style.color);
+  const [tdColor18, setTdColor18] = useState(() => Cookies.get('tdColor4164') || style.color);
+  const [tdColor19, setTdColor19] = useState(() => Cookies.get('tdColor4165') || style.color);
+  const [tdColor30, setTdColor30] = useState(() => Cookies.get('tdColor41399') || style.color);
   
   // ثواب
   const [tdColor20, setTdColor20] = useState(() => Cookies.get('tdColor66') || style.color);
@@ -102,35 +102,35 @@ function Task3() {
   useEffect(() => {
     if (colorChanged) {
         // الفجر
-      Cookies.set('tdColor3147', tdColor1);
-      Cookies.set('tdColor3148', tdColor2);
-      Cookies.set('tdColor3170', tdColor3);
+      Cookies.set('tdColor4147', tdColor1);
+      Cookies.set('tdColor4148', tdColor2);
+      Cookies.set('tdColor4170', tdColor3);
         // الظهر
-      Cookies.set('tdColor3149', tdColor4);
-      Cookies.set('tdColor3151', tdColor5);
-      Cookies.set('tdColor3152', tdColor6);
+      Cookies.set('tdColor4149', tdColor4);
+      Cookies.set('tdColor4151', tdColor5);
+      Cookies.set('tdColor4152', tdColor6);
         // العصر
-      Cookies.set('tdColor3153', tdColor7);
-      Cookies.set('tdColor3154', tdColor8);
-      Cookies.set('tdColor3155', tdColor9);
+      Cookies.set('tdColor4153', tdColor7);
+      Cookies.set('tdColor4154', tdColor8);
+      Cookies.set('tdColor4155', tdColor9);
         // المغرب
-      Cookies.set('tdColor3156', tdColor10);
-      Cookies.set('tdColor3157', tdColor11);
-      Cookies.set('tdColor3158', tdColor12);
+      Cookies.set('tdColor4156', tdColor10);
+      Cookies.set('tdColor4157', tdColor11);
+      Cookies.set('tdColor4158', tdColor12);
         // العشاء
-      Cookies.set('tdColor3159', tdColor13);
-      Cookies.set('tdColor3160', tdColor14);
-      Cookies.set('tdColor3161', tdColor15);
+      Cookies.set('tdColor4159', tdColor13);
+      Cookies.set('tdColor4160', tdColor14);
+      Cookies.set('tdColor4161', tdColor15);
         // الصلاة
-        Cookies.set('tdColor31325', tdColor25);
-        Cookies.set('tdColor31326', tdColor26);
-        Cookies.set('tdColor31327', tdColor27);
+        Cookies.set('tdColor41325', tdColor25);
+        Cookies.set('tdColor41326', tdColor26);
+        Cookies.set('tdColor41327', tdColor27);
         // الاذكار
-      Cookies.set('tdColor3162', tdColor16);
-      Cookies.set('tdColor3163', tdColor17);
-      Cookies.set('tdColor3164', tdColor18);
-      Cookies.set('tdColor3165', tdColor19);
-      Cookies.set('tdColor31399', tdColor30);
+      Cookies.set('tdColor4162', tdColor16);
+      Cookies.set('tdColor4163', tdColor17);
+      Cookies.set('tdColor4164', tdColor18);
+      Cookies.set('tdColor4165', tdColor19);
+      Cookies.set('tdColor41399', tdColor30);
 
         // ثواب
       Cookies.set('tdColor966', tdColor20);
@@ -162,15 +162,15 @@ function Task3() {
      colorChanged]);
 
   useEffect(() => {
-    Cookies.set('totalClicks9', totalClicks);
+    Cookies.set('totalClicks10', totalClicks);
   }, [totalClicks]);
 
   useEffect(() => {
-    Cookies.set('totalClicksathk9', totalClicksathk);
+    Cookies.set('totalClicksathk10', totalClicksathk);
   }, [totalClicksathk]);
 
   useEffect(() => {
-    Cookies.set('totalClickscard9', totalClickscard);
+    Cookies.set('totalClickscard10', totalClickscard);
   }, [totalClickscard]);
 
   const handleTdClick = (tdNumber) => {
@@ -311,10 +311,10 @@ function Task3() {
   return (
     <div className={style.alltask}>
       <div className={style.btnnav}>
-        <NavLink to="/Task10">
+        <NavLink to="/Task11">
       <button className={style.button}>
-        اليوم العاشر
-    <svg fill="currentColor" viewBox="0 0 24 24" className={style.icon}>
+      اليوم الحادي عشر 
+          <svg fill="currentColor" viewBox="0 0 24 24" className={style.icon}>
     <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
      </svg>
     </button>
