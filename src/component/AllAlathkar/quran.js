@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import style from "../css/quran1.module.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import img1 from './image2/18.png';
-import img2 from './image2/2.png'; 
+import img1 from './quran/الجزء الاول/2.jpeg';
+import img2 from './quran/الجزء الاول/3.jpeg'; 
+import img3 from './quran/الجزء الاول/4.jpeg'; 
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import { Pagination } from 'swiper/modules';import 'swiper/css/effect-cards';
+import style from "../css/quran1.module.css";
 
 // import './Book.css';
 
@@ -49,6 +50,11 @@ function Quran() {
           <SwiperSlide>
             <div className={style.image}>
               <img src={img2} alt="" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={style.image}>
+              <img src={img3} alt="" />
             </div>
           </SwiperSlide>
 

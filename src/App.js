@@ -239,11 +239,12 @@ function App() {
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
-        {/* <Route path='/quran' element={
+         <Route path='/quran' element={
           <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
             <Quran/>
             </React.Suspense>
-        }/> */}
+        }/> 
         {/* Days */}
         <Route path='/Days' element={
           <React.Suspense fallback={<Loading/>}>

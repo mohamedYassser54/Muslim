@@ -14,9 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-  /* margin-top:100px; */
 }
 .image{
   width: 100%;
@@ -26,12 +23,10 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
- 
-  
 }
 @media(max-width:601px){
   .mySwiper{
     width:100%;
-  height: 495px;
+  height: 500px;
   }
 }
