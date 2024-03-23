@@ -6,6 +6,7 @@ import img2 from './quran/الجزء الاول/3.jpeg';
 import img3 from './quran/الجزء الاول/4.jpeg'; 
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import { Pagination } from 'swiper/modules';import 'swiper/css/effect-cards';
+import Btn from './quran/btn/btn';
 import style from "../css/quran1.module.css";
 
 // import './Book.css';
@@ -31,6 +32,7 @@ function Quran() {
   return (
     <div>
       <div className={style.allSwiper}>
+        <Btn/>
         <Swiper 
           className={style.mySwiper}
           direction={'vertical'}

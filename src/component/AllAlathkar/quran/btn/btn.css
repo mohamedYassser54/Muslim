@@ -1,0 +1,43 @@
+.btnqu button {
+    display: flex;
+    height: 3em;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    box-shadow: 0 0 3px ;
+    margin-bottom: 10px;
+   }
+   
+   .btnqu button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   .btnqu button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .btnqu button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+   .btnqu button span{
+    font-size: 15px;
+   }
+   @media(max-width:601px){
+    .btnqu button {
+    margin-bottom: 3px;
+    margin-top:90px;
+
+    }
+   }
