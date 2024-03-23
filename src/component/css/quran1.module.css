@@ -9,8 +9,8 @@
 .mySwiper,
 .mySwiper2{
   /* width:350px; */
-  width: 100%;
-  height:700px;
+  width: 80%;
+  height:600px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -26,11 +26,24 @@
   cursor: pointer;
 }
 @media(max-width:601px){
-  .allSwiper{
-    height: 100vh;
+  .mySwiper,
+.mySwiper2{
+  width: 100%;
+
+}
+  .mySwiper{
+    /* width:100%; */
+  height: 550px;
+  }
+}
+@media(max-width:281px){
+  .mySwiper,
+  .mySwiper2{
+    width: 100%;
+  
   }
   .mySwiper{
     /* width:100%; */
-  height: 600px;
+  height:400px;
   }
 }

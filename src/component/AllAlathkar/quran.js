@@ -10,7 +10,10 @@ import img5 from './quran/1/0005.jpg'
 import img6 from './quran/1/0006.jpg'
 import img7 from './quran/1/0007.jpg'
 import { Flipper, Flipped } from 'react-flip-toolkit';
-import { Pagination } from 'swiper/modules';import 'swiper/css/effect-cards';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 import Btn from './quran/btn/btn';
 // import './Book.css';
 
@@ -38,11 +41,12 @@ function Quran() {
         <Btn/>
         <Swiper 
           className={style.mySwiper}
-          direction={'vertical'}
           pagination={{
-            clickable: true,
+            type: 'fraction',
           }}
-          modules={[Pagination]}
+          // navigation={true}
+          modules={[Pagination, Navigation]}
+          
           onSwiper={setSwiper} // تحديث حالة Swiper instance عند الجاهزية
           shouldSwiperUpdate // تمكين تحديث Swiper عند التغييرات
         >
