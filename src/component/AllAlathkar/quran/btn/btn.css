@@ -37,7 +37,7 @@
    @media(max-width:601px){
     .btnqu button {
     margin-bottom: 3px;
-    margin-top:90px;
+    /* margin-top:90px; */
 
     }
    }
