@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+import Ppdf from'./quran/a.pdf'
+// Worker for pdf.js
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+function Quran() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
+  function onPageLoadError(error) {
+    console.error('Error while loading page!', error);
+  }
+
+  return (
+    <div>
+      <Document file={Ppdf} onLoadSuccess={onDocumentLoadSuccess} onLoadError={console.error}>
+        <Page pageNumber={pageNumber} onLoadError={onPageLoadError} />
+      </Document>
+      {numPages !== null && (
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default Quran;
