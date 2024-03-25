@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import style from "../css/quran1.module.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import img1 from './quran/1/0001.jpg';
-import img2 from './quran/1/0002.jpg'
-import img3 from './quran/1/0003.jpg'
-import img4 from './quran/1/0004.jpg'
-import img5 from './quran/1/0005.jpg'
-import img6 from './quran/1/0006.jpg'
-import img7 from './quran/1/0007.jpg'
+import img1 from './quran/سوره الفاتحه/0001.jpg';
+import img2 from './quran/سوره الفاتحه/0002.jpg'
+import img3 from './quran/سوره الفاتحه/0003.jpg'
+import img4 from './quran/سوره الفاتحه/0004.jpg'
+
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -74,21 +72,6 @@ function Quran() {
           <SwiperSlide>
             <div className={style.image}>
               <img src={img4} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img5} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img6} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img7} alt="" />
             </div>
           </SwiperSlide>
 
