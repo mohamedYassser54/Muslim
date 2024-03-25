@@ -12,6 +12,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Btn = lazy(()=>import('./component/Btn'))
 const Home = lazy(()=>import('./component/Home'))
 const Asmaallah = lazy(()=>import('./component/Asmaallah'))
