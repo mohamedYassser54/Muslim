@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import style from "../css/quran1.module.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import img1 from './quran/سوره الفاتحه/0001.jpg';
-import img2 from './quran/سوره الفاتحه/0002.jpg'
-import img3 from './quran/سوره الفاتحه/0003.jpg'
-import img4 from './quran/سوره الفاتحه/0004.jpg'
 
+
+import dataquran  from './quran/dataquran'
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -48,35 +46,14 @@ function Quran() {
           onSwiper={setSwiper} // تحديث حالة Swiper instance عند الجاهزية
           shouldSwiperUpdate // تمكين تحديث Swiper عند التغييرات
         >
-          <SwiperSlide>
+          {dataquran.map((item,index)=>(
+          <SwiperSlide key={index}>
             <div className={style.image}>
-              <img src={img1} alt="" />
+              <img src={item.img} alt="" />
             </div>
           </SwiperSlide>
-
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img3} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={style.image}>
-              <img src={img4} alt="" />
-            </div>
-          </SwiperSlide>
-
-          {/* Add more SwiperSlides as needed */}
-
+         
+          ))}
         </Swiper>
       </div>
     </div>
