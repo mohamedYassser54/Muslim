@@ -121,12 +121,12 @@ const data = [
         title:"أطفال",
         to:"/Child",
     },
-    {
-        id:19,
-        image:img20,
-        title:"رمضان",
-        to:"/Ramadan",
-    },
+    // {
+    //     id:19,
+    //     image:img20,
+    //     title:"رمضان",
+    //     to:"/Ramadan",
+    // },
 ]
 
 export default data;
