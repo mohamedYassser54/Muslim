@@ -4,37 +4,29 @@ import img from './image/18.png';
 import arrow from './arrow.png';
 
 const QiblaCompass = () => {
+  const [userLocation, setUserLocation] = useState(null);
   const [qiblaDirection, setQiblaDirection] = useState(0);
 
   useEffect(() => {
     // Fetch Qibla direction
     axios.get('https://api.aladhan.com/v1/qibla/25.4106386/51.1846025')
       .then(response => {
-        setQiblaDirection(response.data.data.direction);
+        const { latitude, longitude, direction } = response.data.data;
+        
+        // Save user location
+        setUserLocation({ latitude, longitude });
+        
+        // Set qibla direction
+        setQiblaDirection(direction);
       })
       .catch(error => {
         console.error('Error fetching Qibla direction:', error);
       });
-
-    // Add event listener for device orientation
-    window.addEventListener('deviceorientation', handleOrientationChange);
-
-    // Clean up event listener on unmount
-    return () => {
-      window.removeEventListener('deviceorientation', handleOrientationChange);
-    };
   }, []);
-
-  const handleOrientationChange = (event) => {
-    // Update qiblaDirection based on device orientation
-    if (event.alpha) {
-      setQiblaDirection(event.alpha);
-    }
-  };
 
   return (
     <div className='QiblaCompass'>
-      <h1>hello</h1>
+      <h1>hello2</h1>
       <Compass qiblaDirection={qiblaDirection} />
     </div>
   );
