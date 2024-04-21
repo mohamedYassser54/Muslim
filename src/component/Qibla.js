@@ -22,11 +22,26 @@ const QiblaCompass = () => {
       .catch(error => {
         console.error('Error fetching Qibla direction:', error);
       });
+
+    // Add event listener for device orientation
+    window.addEventListener('deviceorientation', handleOrientationChange);
+
+    // Clean up event listener on unmount
+    return () => {
+      window.removeEventListener('deviceorientation', handleOrientationChange);
+    };
   }, []);
+
+  const handleOrientationChange = (event) => {
+    // Update qiblaDirection based on device orientation
+    if (event.alpha !== null) {
+      setQiblaDirection(event.alpha);
+    }
+  };
 
   return (
     <div className='QiblaCompass'>
-      <h1>hello2</h1>
+      <h1>hello5</h1>
       <Compass qiblaDirection={qiblaDirection} />
     </div>
   );
