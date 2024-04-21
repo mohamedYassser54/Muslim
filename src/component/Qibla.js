@@ -10,7 +10,7 @@ const QiblaCompass = () => {
 
   useEffect(() => {
     // Fetch Qibla direction
-    axios.get('http://api.aladhan.com/v1/qibla/25.4106386/51.1846025')
+       axios.get('https://api.aladhan.com/v1/qibla/25.4106386/51.1846025')
       .then(response => {
         setQiblaDirection(response.data.data.direction);
       })
