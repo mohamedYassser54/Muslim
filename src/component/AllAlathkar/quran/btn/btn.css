@@ -1,4 +1,9 @@
-.btnqu button {
+.btnqu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnqu .NavLink {
     display: flex;
     height: 3em;
     width: 130px;
@@ -13,29 +18,31 @@
     background: #fff;
     box-shadow: 0 0 3px ;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: #000;
    }
    
-   .btnqu button > svg {
+   .btnqu .NavLink > svg {
     margin-right: 5px;
     margin-left: 5px;
     font-size: 20px;
     transition: all 0.4s ease-in;
    }
    
-   .btnqu button:hover > svg {
+   .btnqu .NavLink:hover > svg {
     font-size: 1.2em;
     transform: translateX(-5px);
    }
    
-   .btnqu button:hover {
+   .btnqu .NavLink:hover {
     box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
     transform: translateY(-2px);
    }
-   .btnqu button span{
+   .btnqu .NavLink span{
     font-size: 15px;
    }
    @media(max-width:601px){
-    .btnqu button {
+    .btnqu .NavLink {
     margin-bottom: 3px;
     /* margin-top:90px; */
 

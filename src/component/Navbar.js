@@ -71,7 +71,7 @@ const Mawaqeet =["اوقات الصلاة"]
 const downloadApp =["تحميل التطبيق"]
 
 // Ramadan
-const Ramadan = ["رمضان"]
+// const Ramadan = ["رمضان"]
 
 function NavBar() {
    const [filter,setFilter] = useState('');
@@ -88,9 +88,9 @@ function NavBar() {
       if(alathkaralsabah.includes(name)){
         navigate("/alathkaralsabah")
       }
-      else if(Ramadan.includes(name)){
-        navigate("/Ramadan")
-      }
+      // else if(Ramadan.includes(name)){
+      //   navigate("/Ramadan")
+      // }
       else if(alathkaralmsa.includes(name)){
         navigate("/alathkaralmsa");
       }
@@ -228,7 +228,7 @@ function NavBar() {
     ...asmaallah,
     ...Mawaqeet,
     ...downloadApp,
-    ...Ramadan,
+    // ...Ramadan,
   ]}
   renderInput={(params) => (
     <TextField

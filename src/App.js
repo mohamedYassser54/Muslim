@@ -164,7 +164,7 @@ const  Toastify = lazy(()=>import('./component/toastify'))
 
 // ramadan
 const Ramadan = lazy(()=>import('./component/AllAlathkar/ramadan'))
-const Quran = lazy(()=>import('./component/AllAlathkar/quran'))
+// const Quran = lazy(()=>import('./component/AllAlathkar/quran'))
 const Ramadan1 = lazy(()=>import('./component/AllAlathkar/ramadan/days/ramadan1'))
 const Days = lazy(()=>import('./component/AllAlathkar/ramadan/day'))
 const Task = lazy(()=>import('./component/AllAlathkar/ramadan/task'))
@@ -186,7 +186,12 @@ const Task16  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task16'))
 const Task17  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task17'))
 const Task18  = lazy(()=>import('./component/AllAlathkar/ramadan/tasks/task18'))
 
-
+// Quran
+const Quran2 = lazy(()=>import('./component/AllAlathkar/Quran2'))
+const AlFatihah = lazy(()=>import('./component/AllAlathkar/quran/qurann/quranall/Al-Fatihah'))
+const AlBaqarah = lazy(()=>import('./component/AllAlathkar/quran/qurann/quranall/Al-Baqarah'))
+const Imraan = lazy(()=>import('./component/AllAlathkar/quran/qurann/quranall/Imraan'))
+const AnNisa = lazy(()=>import('./component/AllAlathkar/quran/qurann/quranall/AnNisa'))
 
 
 const Qibla = lazy(()=>import('./component/Qibla'))
@@ -258,12 +263,13 @@ function App() {
             {/* <FooterRma2/> */}
             </React.Suspense>
         }/>
-         <Route path='/quran' element={
+         {/* <Route path='/quran' element={
           <React.Suspense fallback={<Loading/>}>
             <Navbar/>
             <Quran/>
             </React.Suspense>
-        }/> 
+        }/>  */}
+
         {/* Days */}
         <Route path='/Days' element={
           <React.Suspense fallback={<Loading/>}>
@@ -1685,6 +1691,42 @@ function App() {
 
 
         {/* END Child */}
+
+
+        {/* quran */}
+        <Route path='/quran' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <Quran2/>
+            </React.Suspense>
+        }/> 
+        <Route path='/Al-Fatihah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <AlFatihah/>
+            </React.Suspense>
+        }/> 
+        <Route path='/Al-Baqarah' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <AlBaqarah/>
+            </React.Suspense>
+        }/> 
+        <Route path='/Imraan' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <Imraan/>
+            </React.Suspense>
+        }/> 
+        <Route path='/An-Nisa' element={
+          <React.Suspense fallback={<Loading/>}>
+            <Navbar/>
+            <AnNisa/>
+            </React.Suspense>
+        }/> 
+
+        {/* / quran */}
+
 
         {/*DownloadApp*/}
      <Route path='/downloadApp' element={
